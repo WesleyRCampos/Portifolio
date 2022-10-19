@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(241, 6, 81);
+}
+h1{
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    color: rgb(255, 253, 253);
+    text-shadow: 0px 0px 5px white;
+}
+.slider {
+    display: block;
+    height: 493px;
+    width: 800px;
+    margin: 5%;
+    margin-top: 20px;
+    position: relative;
+    
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 40%;
+    vertical-align: top;
+    align-content: center;
+}
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: rgb(254, 0, 246);
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+.bio p{
+    margin: 0;
+    font-size: 20px;
+    text-indent: 3ch;
+    padding: 10px;
+    color:aliceblue
+}
+coverLista li{
+    margin-top: 50px;
+    height: 100%;
+    font-size: 20px;
+    top: 70px;
+    color: rgb(255, 253, 253);
+    text-shadow: 0px 0px 5px white;
+}
+
+ul{
+    display: inline-block;
+    position: relative;
+    
+}
+h2{
+    font-family: "Comforter Brush";
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
+    height: 90%;
+    background-color:aliceblue;
+    color: rgb(241, 6, 81);
+    text-shadow: 5px 5px 5px black;
+}
+a{
+    color:aliceblue;
+}
+img{
+    border-radius: 6px;
+    width: 100px;
+    height: 120px;
+    top: 0%;
+    margin-right: 60%
+}
+
+.vertical{
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+.sumario{
+    background-color: rgb(241, 6, 81);
+    padding:5%;
+    width: 40%;
+}
+.listaSumario{
+    align-items: center;
+    color:aliceblue; 
+    font-size: 30px;
+    margin: 30px;
+}
+.video{
+    font-size: 170%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+    margin-left: 50%;
+    height: 15%;
+    width:50%;
+    color:rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px black;
+}
+
+.list{
+    border-radius: 16px;
+    margin-top: 40px;
+    margin-right: 40px;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.pinimg.com/736x/fc/9f/6a/fc9f6a4ba45c75bb87e5c3263943c40c.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+iframe{
+    margin: 10px;
+    background-color:rgb(241, 6, 81);
+    height: 100%;
+    padding-bottom: 10px;
+    width:90%;
+    border-radius:6px;
+
+}
