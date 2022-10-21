@@ -166,7 +166,7 @@ img{
     background-color: black;
     padding: 5%;
     color: white;
-   
+    top: 50%;
 }
 .barra{
     display:inline-flex;
