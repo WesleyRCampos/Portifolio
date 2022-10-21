@@ -100,7 +100,7 @@ img{
 }
 .container-rodape{
     background-image: url(../imag/spotify-11.jpg);
-    height: 100%;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
