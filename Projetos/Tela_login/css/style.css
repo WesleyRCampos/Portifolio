@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    background-color: #5effd9c8;
+}
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(17, 17, 24);
+    display: flex;
+}
+h1, label{
+    color: #5EFFDA;
+    text-align: center;
+}
+.login-esquerdo{
+    width: 50%;
+    padding: 5% 10% 5% 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.login-esquerdo h1{
+    text-align: justify;
+    font-size: 30px;
+}
+.login-direito{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-color:rgba(45, 45, 56, 0.6);
+    width: 50%;
+    margin: 10% 10% 10% 10%;
+    border-radius: 16px;
+    padding: 0% 10% 10% 10%;
+    box-shadow:0px 10px 40px #5effd925;
+}
+label{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    color: rgba(240, 248, 255, 0.847);
+    margin-bottom: 10px;
+}
+input{
+    width:100%;
+    border: none;
+    display:flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgba(240, 248, 255, 0.847);
+    background-color:rgb(24, 24, 35);
+    box-shadow:0px 10px 40px #5effd925;
+    outline: none;
+    margin-bottom: 10px;
+}
+.Btn-login{
+   text-align: center;
+}
