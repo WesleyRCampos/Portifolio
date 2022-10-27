@@ -31,7 +31,7 @@ p{
     margin-left: 20px;
     color: black;
 }
-p:hover{
+.Menu-lateral p:hover{
     width: 100%;
     left: 100px;
     font-weight: 100;
