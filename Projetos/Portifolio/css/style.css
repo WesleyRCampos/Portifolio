@@ -58,9 +58,25 @@ p{
 .Menu-lateral p:hover{
     width: 100px;
     left: 110px;
-    
 }
 li{
     display: flex;
     align-items: center;
+}
+.Letra-detalhe {
+    position: absolute;
+    justify-content: center;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 1500%;
+    color:  rgb(255, 255, 255);
+    text-shadow:rgba(61, 85, 100, 0.799) -10px 10px;
+}
+.letra > span{
+    transform: translateX(-1px) translateY(46px) rotate(-12deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Slabo 13px', serif;
 }
