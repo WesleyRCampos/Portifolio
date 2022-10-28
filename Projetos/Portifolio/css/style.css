@@ -53,11 +53,15 @@ p{
     left: -120px;
     margin-top: 35px;
     color: white;
-    
+    opacity: 0;
 }
 .Menu-lateral p:hover{
+    opacity: 1;
+    visibility: visible;
     width: 100px;
     left: 110px;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
 }
 li{
     display: flex;
