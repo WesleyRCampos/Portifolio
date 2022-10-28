@@ -70,12 +70,34 @@ li{
     left: 70%;
     transform: translate(-50%, -50%);
     font-size: 1500%;
-    color:  rgb(255, 255, 255);
-    text-shadow:rgba(61, 85, 100, 0.799) -10px 10px;
+    color:  rgb(255, 37, 8);
+    text-shadow:rgba(24, 31, 35, 0.799) -10px 10px;
 }
 .letra > span{
     transform: translateX(-1px) translateY(46px) rotate(-12deg);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Slabo 13px', serif;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragrafo{
+    font-size: 250%;
+    position: absolute;
+    justify-content: center;
+    top: 20%;
+    left: 350px;
+   width: 200px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(68, 61, 100, 0.468);
+}
+.paragrafo .Letra-detalhe2{
+    color:  rgb(255, 37, 8);
+    text-shadow:rgba(24, 31, 35, 0.799) -1px 5px;
     justify-content: center;
     align-items: center;
     font-family: 'Slabo 13px', serif;
