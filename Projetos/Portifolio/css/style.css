@@ -1,23 +1,23 @@
 body{
     margin:0 auto;
-    background-image: url(../icons/background.gif);
-    height: 100vh;
-    width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .Menu-lateral{
     position: absolute;
+    height: 400PX;
     width: 140px;
     left: -10px;
-    background-color: rgba(68, 61, 100, 0.468);
+    background-color: rgba(47, 0, 255, 0.468);
     text-align:left;
     border-radius:0px 16px 16px 0px ;
     margin-top: 10px;
 }
 .Menu-lateral:hover{
-    width: 220px;
+    background-image: url(../icons/1667000200745[1].png);
+    height: 400PX;
+    width: 400PX;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     left: 0px;
     background-color:  rgba(68, 61, 100, 0.799);
 }
@@ -37,13 +37,19 @@ body{
 img{
     display: flex;
     justify-content: center;
-    color: black;
     width: 30px;
     margin-top: 10px;
     margin-left: 20px;
     border: 3px groove;
     border-radius: 8px;
     background-color: aliceblue;
+}
+img:focus{
+    background-color: blueviolet;
+}
+img:hover{
+    border: 6px solid;
+    width: 26px;
 }
 p{
     font-family: 'VT323', monospace;
@@ -98,7 +104,7 @@ li{
     align-items: center;
     font-family: 'Slabo 13px', serif;
 }
-.intro{
+.Intro{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,8 +114,8 @@ li{
     position: absolute;
     justify-content: center;
     top: 20%;
-    left: 350px;
-   width: 200px;
+    left: 550px;
+    width: 200px;
     transform: translate(-50%, -50%);
     background-color: rgba(68, 61, 100, 0.468);
 }
