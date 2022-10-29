@@ -43,13 +43,7 @@ img{
     border: 3px groove;
     border-radius: 8px;
     background-color: aliceblue;
-}
-img:focus{
-    background-color: blueviolet;
-}
-img:hover{
-    border: 6px solid;
-    width: 26px;
+
 }
 p{
     font-family: 'VT323', monospace;
