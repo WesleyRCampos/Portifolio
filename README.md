@@ -7,10 +7,9 @@
  
  <a href="../Portifolio/Projetos/Landing page/index.html">Landing page</a>
 
-<<<<<<< HEAD
  <a href="../Portifolio/Projetos/Tela_login/index.html">Tela Login</a>
-=======
+
  <a href="../Portifolio/Projetos/Tela_login/index.html">Tela Login</a>
  
  <a href="../Portifolio/Projetos/Portifolio/index.html">Portifolio</a>
->>>>>>> cf33b02ce313331b21280f4eb94c766dccfa4dd8
+
