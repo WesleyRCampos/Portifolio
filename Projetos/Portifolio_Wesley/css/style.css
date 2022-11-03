@@ -39,18 +39,17 @@ p{
     padding:8px;
     margin-right: 40px;
     transition: 0.3s ease-in-out;
-    
 }
 .Botoes span:hover{
     font-size: 65%;
     margin-right: 45px;
     background-image: linear-gradient(to right ,rgb(0, 183, 255),rgb(157, 221, 246));
-    
 }
 .Cv{
+
     border: none;
     padding: 10px;
-    background-image: linear-gradient(to right ,rgb(0, 183, 255),rgb(157, 221, 246));
+    background-image: linear-gradient(to right ,rgb(157, 221, 246),rgb(0, 183, 255));
 }
 .Apresentacao img{
     margin: auto;
@@ -76,4 +75,14 @@ p{
 h2{
     color: white;
     text-align: center;
+}
+.Sobre p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.Skill img{
+    height: 100px;
+    width: 100px;
 }
