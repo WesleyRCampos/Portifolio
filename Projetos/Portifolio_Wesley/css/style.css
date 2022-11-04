@@ -3,6 +3,40 @@ body{
     font-family: 'Oswald', sans-serif;
     background-color:rgb(0, 16, 33) ;
 }
+.Titulo{
+    color: rgb(0, 183, 255) ;
+}
+.Cabecario{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height:10%;
+    width: 100%;
+    background-color: rgb(0, 16, 33);
+    border-bottom: 2px solid white;
+}
+.Cabecario img{
+    width: 50px;
+    padding: 10px;
+}
+.Modos-Luz img{
+    border-radius: 50%;
+    background-color:black;
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+}
+.Modos-Luz{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    padding: 2px;
+    background-color: rgb(0, 183, 255);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
 .Apresentacao{
     width: 100vw;
     display: flex;
@@ -82,7 +116,14 @@ h2{
     align-items: center;
     text-align: justify;
 }
+.Skill{
+    background-color: aliceblue;
+    
+}
 .Skill img{
-    height: 100px;
-    width: 100px;
+    color: rgb(66, 157, 157);
+    background-color: aqua;
+    height: 10%;
+    width: 10%;
+    padding:3%;
 }
