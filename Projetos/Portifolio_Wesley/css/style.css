@@ -7,42 +7,50 @@ body{
     color: rgb(0, 183, 255) ;
 }
 .Cabecario{
+    vertical-align: auto;
+    position:fixed;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height:10%;
+    top: 10;
+    height: 10%;
     width: 100%;
     background-color: rgb(0, 16, 33);
     border-bottom: 2px solid white;
+   
 }
 .Cabecario img{
     width: 50px;
     padding: 10px;
 }
 .Modos-Luz img{
+    position:absolute;
+    right:none;
     border-radius: 50%;
     background-color:black;
-    height: 30px;
-    width: 30px;
-    padding: 3px;
+    height: 25px;
+    width: 25px;
+    padding: 8px;
+    margin-right: 12px;
 }
 .Modos-Luz{
-    display: flex;
-    align-items: center;
     width: 80px;
     height: 40px;
-    padding: 2px;
+    padding: 5px;
+    margin: 10px;
     background-color: rgb(0, 183, 255);
-    cursor: pointer;
     border-radius: 20px;
 }
-
+#dark-mode-input:checked ~ .Cabecario{
+    background-color: aliceblue;
+}
 .Apresentacao{
+   
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 20px 20px 20px;
+    margin: 100px 20px 20px 20px;
 }
 .Info{
     margin: 0 auto;
