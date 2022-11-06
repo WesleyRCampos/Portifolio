@@ -11,14 +11,15 @@
     <title>Portifolio_Wesley</title>
 </head>
 <body>
+    <div class="Cabecario">
+        <img src="../Portifolio_Wesley/icons/menu.png">
+        <h1 class="Titulo">Portifolio</h1>   
+    </div>
     <input type="checkbox" id="dark-mode-input" class="dark-mode"/>
-        <div class="Cabecario">
-            <img src="../Portifolio_Wesley/icons/menu.png">
-            <h1 class="Titulo">Portifolio</h1> 
-            <div class="Modos-Luz" for="dark-mode-input">   
-                <img src="../Portifolio_Wesley/icons/luz1.svg">
-            </div>   
-        </div>
+    <label class="dark-mode-toggler" for="dark-mode-input">
+        <div></div>
+    </label>
+    <div class="Conteudo">
         <div class="Apresentacao">
             <div class="Info">
                 <div class="Intro">
@@ -26,21 +27,22 @@
                     <p>Desenvolvedor Front-End</p>
                 </div>
                 <div class="Botoes">
-                    <span class="Cv">Download CV</span>
-                    <span>Entrar em contato</span>
+                        <a class="Cv" href="https://docs.google.com/document/d/0B_ZlI51z1msxXzZfRW10cW9senlVYVh5eWpYalFrOFZUbFQ4/edit?usp=sharing&ouid=112359791525481704526&resourcekey=0-RkrLEEIDJcRAMZAU-LbuNQ&rtpof=true&sd=true">Download CV</a>
+                        <a href="https://github.com/WesleyRCampos">Entrar contato</a>
                 </div>
             </div>
             <div class="Imagen-Perfil">
                 <img src="../Portifolio_Wesley/icons/1667000200745[1].png">
             </div>
-        </div>
-        <div class="Sobre">
-            <h2>Sobre mim</h2>
+    </div>
+    <div class="Sobre">
+        <h2>Sobre mim</h2>
             <p>Sou desenvolvedor web front-end, atualmente estou trabalhando no meu desenvolvimento profissional e novas habilidades</p>
         </div>
         <div class="Skill">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
         </div>
+    </div>
 </body>
 </html>

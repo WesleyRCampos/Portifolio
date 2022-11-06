@@ -90,7 +90,7 @@ button:hover{
 @media only screen and (max-width: 600px) {
     .login{
 
-        flex-direction: column;
+        flex-direction: column-reverse;
 }
     .login-esquerdo > h1{
         display: none;
