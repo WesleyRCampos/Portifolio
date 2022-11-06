@@ -181,5 +181,14 @@ h2{
     .Cabecario .Titulo{
         color: rgb(0, 183, 255) ;
         font-size: 20px;
+        margin: 1px 1px 1px 65px ;
+    }
+    .dark-mode-toggler{
+        right: 40px;
+        top:25px
+    }
+    .Info{
+        margin-left: 40px;
+        margin-bottom: 40px;
     }
 }
