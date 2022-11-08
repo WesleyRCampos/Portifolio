@@ -35,7 +35,7 @@
     height: 100%;
     left: 0;
     border-left: 2px solid blue;
-    animation: typing 1.5s steps(30) infinite;
+    animation: typing 1.5s steps(15) infinite;
     background:white;
 }
 .Dinamico li span{
