@@ -1,3 +1,11 @@
+
+video{
+    height: 500px;
+    width: 500px;
+    border-radius: 50% ;
+    border: 10px solid rgb(245, 93, 62);
+    background-color: rgb(69, 8, 8);
+}
 .Container{
     display: inline-flex;
 }
@@ -8,8 +16,8 @@
 }
 .Container .Dinamico{
     margin-left: 15px;
-    line-height: 90px;
-    height: 90px;
+    line-height: 84px;
+    height: 79px;
     overflow: hidden;
 }
 .Dinamico li{
@@ -20,12 +28,12 @@
     left: 0;
     position: relative;
     top: 0;
-    animation: slide 6s steps(4) infinite;
+    animation: slide 18s steps(10) infinite;
     background-color: aqua;
 }
 @keyframes slide{
     100%{
-        top:-360px
+        top:-850px
     }
 }
 .Dinamico li span::after{
@@ -35,7 +43,7 @@
     height: 100%;
     left: 0;
     border-left: 2px solid blue;
-    animation: typing 1.5s steps(15) infinite;
+    animation: typing 1.8s steps(15) infinite;
     background:white;
 }
 .Dinamico li span{
