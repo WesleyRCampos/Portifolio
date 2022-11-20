@@ -1,18 +1,123 @@
 
-video{
-    height: 500px;
-    width: 500px;
-    border-radius: 50% ;
-    border: 10px solid rgb(245, 93, 62);
-    background-color: rgb(69, 8, 8);
+.flexslider{
+    height: 20%;
+    width: 100vw;
+    background-color: yellowgreen;
+}
+.slider {
+    display: block;
+    height: 65vh;
+    width: 100vw;
+    background-color: aqua;
+    margin: 0 auto;   
+}
+
+.slider li {
+    position: absolute;
+    list-style: none;
+    height: 60%;
+    width: 100vw;
+    left: 40%; 
+}
+.slider img {
+    margin-top: 1%;
+    border: 10px solid blue;
+    border-radius: 50%; 
+    height: 97%; 
+    align-content: center;
+}
+.slider input {
+    display: none;
+}
+.slider label {
+    background-image: url("../assets/flor.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    z-index: 10;
+}
+.slider li:nth-child(1) label {
+    left: 20px;
+    top: 60px;
+}
+.slider li:nth-child(2) label {
+    left: -5px;
+    top: 110px;
+}
+.slider li:nth-child(3) label {
+    left: -20px;
+    top: 170px;
+}
+.slider li:nth-child(4) label {
+    left: -25px;
+    top: 240px;
+}
+.slider li:nth-child(5) label {
+    left: -20px;
+    top: 310px;
+}
+.slider li:nth-child(6) label {
+    left: 5px;
+    top: 370px;
+}
+.slider li:nth-child(7) label {
+    left: 50px;
+    top: 430px;
+}
+.slider li:nth-child(8) label {
+    left: 285px;
+    top: 430px;
+}
+.slider li:nth-child(9) label {
+    left: 325px;
+    top: 380px;
+}
+.slider li:nth-child(10) label {
+    left: 355px;
+    top: 310px;
+}
+.slider li:nth-child(11) label {
+    left: 365px;
+    top: 240px;
+}
+.slider li:nth-child(12) label {
+    left: 355px;
+    top:170px;
+}
+.slider li:nth-child(13) label {
+    left: 340px;
+    top:110px;
+}
+.slider li:nth-child(14) label {
+    left: 310px;
+    top: 60px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
 }
 .Container{
     display: inline-flex;
+    width: 100vw;
+    height:100vh;
 }
 .Container .Estatico{
     color: blue;
-    font-size: 60px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 200;
 }
 .Container .Dinamico{
     margin-left: 15px;
@@ -39,8 +144,8 @@ video{
 .Dinamico li span::after{
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     left: 0;
     border-left: 2px solid blue;
     animation: typing 1.8s steps(15) infinite;
@@ -53,5 +158,15 @@ video{
     100%{
         left: 100%;
         margin: 0 -35px 0 35px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slider li{
+        height: 50%;
+        left: 12%;
+    }
+    .slider img {
+        margin-top: 1%;
     }
 }
