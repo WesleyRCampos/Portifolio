@@ -1,27 +1,30 @@
-
-.flexslider{
-    height: 20%;
+.Banner img{
+    display: block;
+    margin:auto;
     width: 100vw;
-    background-color: yellowgreen;
+}
+.flexslider{
+    width: 100vw;
+
 }
 .slider {
     display: block;
     height: 65vh;
-    width: 100vw;
-    background-color: aqua;
-    margin: 0 auto;   
+    width: 50vw;  
 }
 
 .slider li {
     position: absolute;
     list-style: none;
     height: 60%;
-    width: 100vw;
-    left: 40%; 
+    width: 50vw;
+    right: 5%; 
 }
 .slider img {
+    display: flex;
+    position: absolute;
     margin-top: 1%;
-    border: 10px solid blue;
+    border: 10px solid rgb(148, 20, 67);
     border-radius: 50%; 
     height: 97%; 
     align-content: center;
@@ -111,30 +114,33 @@
 }
 .Container{
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    height:100vh;
+    height:10vh;
+    background-color: rgb(117, 30, 67);
 }
 .Container .Estatico{
-    color: blue;
-    font-size: 40px;
+    color: rgb(255, 39, 197);
+    font-size: 85px;
     font-weight: 200;
 }
 .Container .Dinamico{
-    margin-left: 15px;
     line-height: 84px;
     height: 79px;
     overflow: hidden;
 }
 .Dinamico li{
-    color: red;
+    background-color: rgb(117, 30, 67);
+    color: white;
     list-style: none;
-    font-size: 80px;
-    font-weight: 500;
+    font-size: 85px;
+    font-weight: 200;
     left: 0;
     position: relative;
     top: 0;
     animation: slide 18s steps(10) infinite;
-    background-color: aqua;
+    
 }
 @keyframes slide{
     100%{
@@ -147,7 +153,6 @@
     width: 100vw;
     height: 100vh;
     left: 0;
-    border-left: 2px solid blue;
     animation: typing 1.8s steps(15) infinite;
     background:white;
 }
