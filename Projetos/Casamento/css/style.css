@@ -1,39 +1,99 @@
+.Container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:10%;
+    margin: 2% 0% 2% 0% ;
+    background-color: rgb(234, 112, 234);
+}
+.Container .Estatico{
+    color: rgb(78, 25, 64);
+    font-size: 85px;
+    font-weight: 200;
+}
+.Container .Dinamico{
+    line-height: 84px;
+    height: 79px;
+    overflow: hidden;
+}
+.Dinamico li{
+    background-color: rgb(234, 112, 234);
+    color: white;
+    list-style: none;
+    font-size: 85px;
+    font-weight: 200;
+    left: 0;
+    position: relative;
+    top: 0;
+    animation: slide 18s steps(10) infinite;
+    
+}
+@keyframes slide{
+    100%{
+        top:-850px
+    }
+}
+.Dinamico li span::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    animation: typing 1.8s steps(15) infinite;
+   
+}
+.Dinamico li span{
+    position: relative;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.Banner{
+    background-color:  rgb(234, 112, 234);
+}
 .Banner img{
     display: block;
     margin:auto;
-    width: 100vw;
+    border: 10px solid white;
+    width: 80%;
+    height: 70%;
 }
 .flexslider{
-    width: 100vw;
-
+    width: 0%;
+    background-color: black;
 }
 .slider {
     display: block;
-    height: 65vh;
-    width: 50vw;  
+    height: 65%;
+    width: 50%;  
 }
 
 .slider li {
     position: absolute;
     list-style: none;
-    height: 60%;
-    width: 50vw;
-    right: 5%; 
+    height: 65%;
+    width: 30%;
+    top: 75%;
+    right: 30%; 
 }
 .slider img {
     display: flex;
     position: absolute;
     margin-top: 1%;
-    border: 10px solid rgb(148, 20, 67);
+    border: 10px solid rgb(234, 112, 234);
     border-radius: 50%; 
-    height: 97%; 
+    height: 88%; 
     align-content: center;
 }
 .slider input {
     display: none;
 }
 .slider label {
-    background-image: url("../assets/flor.png");
+    background-image: url("../assets/rosa.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,6 +105,10 @@
     position: absolute;
     width: 20px;
     z-index: 10;
+}
+.slider label:hover{
+    height:30px;
+    width: 25px;
 }
 .slider li:nth-child(1) label {
     left: 20px;
@@ -75,19 +139,19 @@
     top: 430px;
 }
 .slider li:nth-child(8) label {
-    left: 285px;
+    left: 275px;
     top: 430px;
 }
 .slider li:nth-child(9) label {
-    left: 325px;
-    top: 380px;
+    left: 310px;
+    top: 375px;
 }
 .slider li:nth-child(10) label {
-    left: 355px;
+    left: 345px;
     top: 310px;
 }
 .slider li:nth-child(11) label {
-    left: 365px;
+    left: 360px;
     top: 240px;
 }
 .slider li:nth-child(12) label {
@@ -112,66 +176,106 @@
     visibility: visible;
     z-index: 10;
 }
-.Container{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height:10vh;
-    background-color: rgb(117, 30, 67);
-}
-.Container .Estatico{
-    color: rgb(255, 39, 197);
-    font-size: 85px;
-    font-weight: 200;
-}
-.Container .Dinamico{
-    line-height: 84px;
-    height: 79px;
-    overflow: hidden;
-}
-.Dinamico li{
-    background-color: rgb(117, 30, 67);
-    color: white;
-    list-style: none;
-    font-size: 85px;
-    font-weight: 200;
-    left: 0;
-    position: relative;
-    top: 0;
-    animation: slide 18s steps(10) infinite;
-    
-}
-@keyframes slide{
-    100%{
-        top:-850px
-    }
-}
-.Dinamico li span::after{
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    animation: typing 1.8s steps(15) infinite;
-    background:white;
-}
-.Dinamico li span{
-    position: relative;
-}
-@keyframes typing{
-    100%{
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-}
-
 @media only screen and (max-width: 600px) {
+    .Container{
+        height: 1%;
+    }
+    .Container .Estatico{
+    font-size: 25px;
+    font-weight: 50;
+    height: -49px;
+    }
+    .Container .Dinamico{
+        line-height: 84px;
+        height: 69px;
+    }
+    .Dinamico li{
+        font-size: 25px;
+        font-weight: 50;
+    }
     .slider li{
-        height: 50%;
-        left: 12%;
+        height: 90px;
+        width: 5px;
+        top: 25%;
+        right: 58%; 
     }
     .slider img {
         margin-top: 1%;
+        border: 5px solid rgb(234, 112, 234);
+        height: 99%; 
     }
+    .slider label {
+        background-image: url("../assets/rosa.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 10px;
+        cursor: pointer;
+        display: block;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        width: 5px;
+        z-index: 10;
+    }
+    .slider label:hover{
+        height:11px;
+        width: 6px;
+    }
+    .slider li:nth-child(1) label {
+    left: 10px;
+    top: 0px;
+}
+.slider li:nth-child(2) label {
+    left: -1px;
+    top: 14px;
+}
+.slider li:nth-child(3) label {
+    left: -7px;
+    top: 32px;
+}
+.slider li:nth-child(4) label {
+    left: -8px;
+    top: 51px;
+}
+.slider li:nth-child(5) label {
+    left: -5px;
+    top: 69px;
+}
+.slider li:nth-child(6) label {
+    left: 5px;
+    top: 85px;
+}
+.slider li:nth-child(7) label {
+    left: 18px;
+    top: 95px;
+}
+.slider li:nth-child(8) label {
+    left: 52px;
+    top: 95px;
+}
+.slider li:nth-child(9) label {
+    left: 66px;
+    top: 85px;
+}
+.slider li:nth-child(10) label {
+    left: 75px;
+    top: 69px;
+}
+.slider li:nth-child(11) label {
+    left: 80px;
+    top: 51px;
+}
+.slider li:nth-child(12) label {
+    left:80px;
+    top:32px;
+}
+.slider li:nth-child(13) label {
+    left: 72px;
+    top:14px;
+}
+.slider li:nth-child(14) label {
+    left: 60px;
+    top: 0px;
+}
 }
