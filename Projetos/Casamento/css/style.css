@@ -193,16 +193,23 @@
         font-size: 25px;
         font-weight: 50;
     }
+    .Banner img{
+        display: block;
+        margin:auto;
+        border:0px;
+        width: 100%;
+        height: 70%;
+    }
     .slider li{
-        height: 90px;
+        height: 100px;
         width: 5px;
-        top: 25%;
-        right: 58%; 
+        top: 26%;
+        right: 63%; 
     }
     .slider img {
         margin-top: 1%;
         border: 5px solid rgb(234, 112, 234);
-        height: 99%; 
+        height: 150%; 
     }
     .slider label {
         background-image: url("../assets/rosa.png");
@@ -223,59 +230,59 @@
         width: 6px;
     }
     .slider li:nth-child(1) label {
-    left: 10px;
-    top: 0px;
+    left: 15px;
+    top: 2px;
 }
 .slider li:nth-child(2) label {
     left: -1px;
-    top: 14px;
+    top: 20px;
 }
 .slider li:nth-child(3) label {
-    left: -7px;
-    top: 32px;
+    left: -9px;
+    top: 45px;
 }
 .slider li:nth-child(4) label {
-    left: -8px;
-    top: 51px;
+    left: -12px;
+    top: 71px;
 }
 .slider li:nth-child(5) label {
-    left: -5px;
-    top: 69px;
+    left: -10px;
+    top: 99px;
 }
 .slider li:nth-child(6) label {
-    left: 5px;
-    top: 85px;
+    left: 0px;
+    top: 125px;
 }
 .slider li:nth-child(7) label {
-    left: 18px;
-    top: 95px;
+    left: 20px;
+    top: 148px;
 }
 .slider li:nth-child(8) label {
-    left: 52px;
-    top: 95px;
+    left: 100px;
+    top: 148px;
 }
 .slider li:nth-child(9) label {
-    left: 66px;
-    top: 85px;
+    left: 112px;
+    top: 125px;
 }
 .slider li:nth-child(10) label {
-    left: 75px;
-    top: 69px;
+    left: 122px;
+    top: 99px;
 }
 .slider li:nth-child(11) label {
-    left: 80px;
-    top: 51px;
+    left: 128px;
+    top: 71px;
 }
 .slider li:nth-child(12) label {
-    left:80px;
-    top:32px;
+    left:122px;
+    top:45px;
 }
 .slider li:nth-child(13) label {
-    left: 72px;
-    top:14px;
+    left: 112px;
+    top:20px;
 }
 .slider li:nth-child(14) label {
-    left: 60px;
-    top: 0px;
+    left: 100px;
+    top: 2px;
 }
 }
