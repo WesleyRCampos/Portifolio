@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var anoCopa = 1930;
+
+        while(anoCopa <= 2024) {
+            alert("Teve copa em " + anoCopa);
+            anoCopa = anoCopa + 4; 
+        }
+
+        alert("FIM");
+    </script>
+</body>
+</html>
