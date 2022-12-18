@@ -116,11 +116,7 @@ body{
 #dark-mode-input:checked ~ .Conteudo p{
     color: rgb(63, 62, 62);
 }
-#dark-mode-input:checked ~ .Skill img{
-    background: rgba(41, 82, 193, 0.775);
-    box-shadow: 0 4px 30px rgb(183, 62, 62);
-    border: 1px solid rgba(9, 9, 9, 0.844);
-}
+
 .dark-mode{
     display: none;
 }
@@ -246,11 +242,8 @@ h2{
 }
 .Skill img{
     background: rgba(137, 163, 235, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(231, 206, 206, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px ;
+    border: 1px solid white;
     height: 10%;
     width: 10%;
     padding:3%;
