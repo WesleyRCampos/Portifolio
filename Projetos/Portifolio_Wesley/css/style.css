@@ -290,17 +290,31 @@ h2{
         align-items: center;
         margin: 50px 20px 20px 20px;
     }
-    .dark-mode-toggler{
-        right: 20px;
-        top:25px
-    }
     .Info{
         margin-left: 40px;
         margin-bottom: 40px;
     }
     .menu-mode-toggler{
-        right: 5px;
-        top: 18px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        left: 30px;
+        top: 24px;
+    }
+    .dark-mode-toggler{
+        width: 60px;
+        height: 30px;
+        right: 35px;
+        top:35px
+    }
+    .dark-mode-toggler div{
+        width:20px;
+        height: 20px;
+        top:5px;
+        left: 5px;
+    }
+    #dark-mode-input:checked ~ .dark-mode-toggler div{
+        left: 35px;
     }
  
 }
