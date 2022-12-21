@@ -2,10 +2,6 @@ body{
     margin: 0 auto;
     font-family: 'Oswald', sans-serif;
 }
-.Cabecario h1{
-    color: rgb(0, 183, 255) ;
-    margin: auto;
-}
 .Cabecario{
     position:fixed;
     display: flex;
@@ -17,35 +13,42 @@ body{
     border-bottom: 2px solid white;
    
 }
-.Cabecario img{
-    width: 50px;
-    padding: 10px 0px 10px 10px;
+.Cabecario h1{
+    color: rgb(0, 183, 255) ;
+    margin: auto;
 }
 
 .menu-open {
     display: none;  
     transition: 1s ease-in-out;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
 }
 .menu-open ul{
-    width: 100%;;
+    margin: auto;
+    right: auto;
+    padding: 0;
 }
 .menu-open li{
+    width: 100%;
     list-style: none;
-    display: flex;
-    justify-content: center;
 }
 .menu-open p{
     color: white;
     font-size:300%;
+    
 }
+
 
 #menu-mode-input:checked ~ .menu-open{
     position:absolute;
     display: block;
     justify-content: center;
     align-items: center;
-    height: 200vh;
-    width: 100vw;
+  
+    width: 100%;
     background-color: rgb(0, 16, 33, 0.9);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 13.5px );
@@ -116,7 +119,12 @@ body{
 #dark-mode-input:checked ~ .Conteudo p{
     color: rgb(63, 62, 62);
 }
-
+#dark-mode-input:checked ~ .menu-open{
+    background-color: rgba(81, 106, 134, 0.9);
+}
+#dark-mode-input:checked ~ .menu-open p{
+    color: rgb(0, 183, 255)
+}
 .dark-mode{
     display: none;
 }
@@ -265,10 +273,22 @@ h2{
     .Cabecario{
         top: none;
     }
-    .Cabecario .Titulo{
+    .Cabecario h1{
         color: rgb(0, 183, 255) ;
         font-size: 20px;
-        padding-right: 60px;
+       
+    }
+    .Sobre p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 50px 20px 50px;
+    }
+    .Sobre h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 20px 20px 20px;
     }
     .dark-mode-toggler{
         right: 20px;
@@ -278,4 +298,9 @@ h2{
         margin-left: 40px;
         margin-bottom: 40px;
     }
+    .menu-mode-toggler{
+        right: 5px;
+        top: 18px;
+    }
+ 
 }
