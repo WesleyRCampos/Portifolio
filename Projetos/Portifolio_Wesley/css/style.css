@@ -299,13 +299,13 @@ h2{
         height: 40px;
         border: none;
         left: 30px;
-        top: 24px;
+        top: 19px;
     }
     .dark-mode-toggler{
         width: 60px;
         height: 30px;
         right: 35px;
-        top:35px
+        top:30px
     }
     .dark-mode-toggler div{
         width:20px;
