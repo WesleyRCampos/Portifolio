@@ -104,10 +104,16 @@ body{
 
 
 
+#dark-mode-input:checked ~ h1 .porti-Nome{   
+    color: rgb(0, 183, 255);
+}
 #dark-mode-input:checked ~ .Conteudo{
     background-color: aliceblue;
 }
-#dark-mode-input:checked ~ .Conteudo h1{
+#dark-mode-input:checked ~ h1 .line {
+    border-right: 2px solid black;
+}
+#dark-mode-input:checked ~ .Conteudo .Nome{
     color: black;
 }
 #dark-mode-input:checked ~ .Conteudo h2{
@@ -165,28 +171,63 @@ body{
     width: 100%;
 }
 .Apresentacao{
-    display: flex;
-    justify-content: center;
+    display:flex;
+    justify-content:center;
     align-items: center;
     margin: 50px 20px 20px 20px;
 }
 .Info{
-    margin: 0 auto;
-    font-size: 120%;
+    display: inline-block;
+    font-size: 80%;
 }
-.Nome{
-    color: rgb(0, 183, 255);
-}
+
 .Intro{
     margin-right: 20px;
 }
 
-h1{
+.Nome{
     color:white;
     letter-spacing: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+
 }
 p{
     color: silver;
+}
+.porti-Nome{
+    color:white;
+    letter-spacing: 10px;
+    overflow: hidden;
+    white-space: nowrap;    
+    color: rgb(0, 183, 255);
+}
+.porti-Nome {
+    animation:
+    cursor 500ms steps(19) infinite normal,
+    porti-Nome 4s steps(19) 1s normal both;
+}
+.line {
+    border-right: 2px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+@keyframes porti-Nome{
+    from {
+        width: 0;
+    }
+    to {
+        width: 360px;
+    }
+}
+@keyframes cursor {
+    from {
+        border-right-color: aliceblue;
+    }
+    to {
+        border-right-color: transparent;
+    }
 }
 .Botoes{
     margin-top: 50px;
