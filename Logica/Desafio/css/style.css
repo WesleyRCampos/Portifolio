@@ -2,33 +2,31 @@ body{
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
 }
-.screen{
+.conteudo{
     width: 100%;
     height: 20%;
-    background-color:;
-
     display: flex;
 }
 h1, label{
     color: white;
     text-align: center;
 }
-.screen-esquerdo{
+.tela-esquerdo{
     width: 100%;
     margin:-5% 5% 0% 5%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.screen-esquerdo h1{
+.tela-esquerdo h1{
     text-align: center;
     font-size: 30px;
     color:black;
 }
-.screen-direito h1{
+.tela-direito h1{
     text-align: center;
 }
-.screen-direito{
+.tela-direito{
     display: flex;
     justify-content: center;
     align-items:center;
@@ -88,27 +86,27 @@ input[type=submit]:hover{
 }
 
 @media only screen and (max-width: 950px) {
-    .screen-direito{
+    .tela-direito{
         width: 75%;
     }
 }
 @media only screen and (max-width: 600px) {
-    .login{
+    .conteudo {
         flex-direction: column;
-}
-    .screen-esquerdo > img{
+        flex-wrap: wrap;
+    }
+    .tela-esquerdo > img{
         height: 70%;
     }
-    .screen-direito{
+    .tela-direito{
         width: 100%;
         height:100%;
         padding:0%;
         margin: 0% 0% 5% 0%;
     }
-    .screen-esquerdo{
+    .tela-esquerdo{
         width: 100%;
         height: 100%;
-        height: auto;
         padding:0%;
         margin: 0%;
     }
