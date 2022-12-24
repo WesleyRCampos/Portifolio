@@ -1,0 +1,113 @@
+body{
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+.conteudo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+h1, label{
+    color: white;
+    text-align: center;
+}
+.tela-esquerdo{
+    width: 100%;
+    margin:-5% 5% 0% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.tela-esquerdo h1{
+    text-align: center;
+    font-size: 30px;
+    color:black;
+}
+.tela-direito h1{
+    text-align: center;
+}
+.tela-direito{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-color:rgba(225, 199, 0, 0.6);
+    background-image: url(/Logica/Desafio/banner-roupa.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+    margin: 2% 5% 10% 5%;
+    border-radius: 16px;
+    padding: 5% 5% 10% 5%;
+    box-shadow:0px 10px 40px #5effd925;
+}
+
+label{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    color: rgba(240, 248, 255, 0.847);
+    margin-bottom: 10px;
+}
+input{
+    width:100%;
+    border: 2px solid  white;
+    align-items:center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color:#d4a52e;
+    background-color:rgb(24, 24, 35);
+    box-shadow:0px 10px 40px #5effd925;
+    outline: none;
+    margin-bottom: 20px;
+}
+.enviar{
+    margin: 0 auto;
+}
+input[type=submit]{
+    border-radius: 10px;
+    
+    align-items:center;
+    justify-content: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color:white;
+    background-color:rgb(70, 68, 68);
+    border: 2px solid white;
+    cursor: grab;
+}
+input[type=submit]:hover{
+    background-color: #ffb804;
+    border: 2px solid aliceblue;
+}
+
+@media only screen and (max-width: 950px) {
+    .tela-direito{
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .conteudo {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .tela-esquerdo > img{
+        height: 70%;
+    }
+    .tela-direito{
+        width: 100%;
+        height:100%;
+        padding:0%;
+        margin: 0% 0% 5% 0%;
+    }
+    .tela-esquerdo{
+        width: 100%;
+        height: 100%;
+        padding:0%;
+        margin: 0%;
+    }
+}
