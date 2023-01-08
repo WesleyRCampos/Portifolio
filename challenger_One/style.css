@@ -20,7 +20,7 @@ main {
     bottom: 0%;
 }
 
-input {
+#texto {
     position: absolute;
     width: 680px;
     height: 67px;
@@ -127,7 +127,7 @@ textarea {
     align-self: stretch;
     flex-grow: 0;
     
-   resize:vertical;
+   resize:none;
 }
 
 textarea:focus, input:focus {
@@ -200,7 +200,7 @@ textarea:focus, input:focus {
     top: 885px;
 }
 
-.button{
+.botao{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -223,7 +223,7 @@ textarea:focus, input:focus {
     flex-grow: 0;
 }
 
-.button p{
+.botao input[type=button]{
     width: 280px;
     height: 19px;
 
@@ -237,6 +237,8 @@ textarea:focus, input:focus {
     /* White */
 
     color: #FFFFFF;
+    background-color: #0A3871;
+    border-style: none;
 
 
     /* Inside auto layout */
@@ -246,7 +248,7 @@ textarea:focus, input:focus {
     flex-grow: 1;
 }
 
-.button-2{
+.botao-2{
     box-sizing: border-box;
 
 /* Auto layout */
@@ -275,7 +277,8 @@ textarea:focus, input:focus {
     flex-grow: 0;
 }
 
-.button-2 p{
+.botao-2 input[type=button]{
+    
     width: 280px;
     height: 19px;
 
@@ -289,6 +292,8 @@ textarea:focus, input:focus {
     /* Dark blue/dark-blue-300 */
 
     color: #0A3871;
+    background-color:#D8DFE8;
+    border-style: none;
 
 
     /* Inside auto layout */

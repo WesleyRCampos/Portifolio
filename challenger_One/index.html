@@ -13,7 +13,7 @@
         <div class="logo">
             <img src="./Vector.png">
         </div>
-        <input type="text" name="texto" placeholder="Digite seu texto">
+        <input type="text" name="texto" id="texto" placeholder="Digite seu texto">
         <div class="retangulo">
             <img src="./High quality products 1 1.svg">
         </div>
@@ -28,15 +28,21 @@ Digite um texto que você deseja criptografar ou descriptografar.
             <p class="informacao">Apenas letras minúsculas e sem acento.</p>
         </div>
         <div class="botao-cripto">
-            <div class="button">
-                <p>Criptografar</p>
+            <div class="botao">
+                <input type="button" onclick="cript()" id="cript" name="acao" value="Criptografar">
             </div>
-            <div class="button-2">
-                <p>Descriptografar</p>
+            <div class="botao-2">
+                <input type="button" onclick="descript()" id="descript" name="reacao" value="Descriptografar">
             </div>
         </div>
+        <script>
+            function cript(){
+                var valor = document.getElementById("texto").value;
+                alert("Você digitou: " + valor);
 
+        }
+        </script>
     </main>
-
+   
 </body>
 </html>

@@ -1,15 +1,22 @@
 body{
     background-color: rgb(255, 255, 255);
 }
+
+.caixa img{
+    width: 110px;
+}
+
 .conteudo{
     width: 100%;
     height: 100%;
     display: flex;
 }
+
 h1, label{
     color: white;
     text-align: center;
 }
+
 .tela-esquerdo{
     width: 100%;
     margin:-5% 5% 0% 5%;
@@ -17,20 +24,23 @@ h1, label{
     justify-content: center;
     flex-direction: column;
 }
+
 .tela-esquerdo h1{
     text-align: center;
     font-size: 30px;
     color:black;
 }
+
 .tela-direito h1{
     text-align: center;
 }
+
 .tela-direito{
     display: flex;
     justify-content: center;
     align-items:center;
     flex-direction: column;
-    background-color:rgba(225, 199, 0, 0.6);
+    background-color:rgba(210, 44, 88, 0.6);
     background-image: url(/Logica/Desafio/banner-roupa.png);
     background-repeat: no-repeat;
     background-size: 60%;
@@ -51,6 +61,7 @@ label{
     color: rgba(240, 248, 255, 0.847);
     margin-bottom: 10px;
 }
+
 input{
     width:100%;
     border: 2px solid  white;
@@ -58,15 +69,17 @@ input{
     justify-content: center;
     padding: 10px;
     border-radius: 10px;
-    color:#d4a52e;
+    color:#d22c58;
     background-color:rgb(24, 24, 35);
     box-shadow:0px 10px 40px #5effd925;
     outline: none;
     margin-bottom: 20px;
 }
+
 .enviar{
     margin: 0 auto;
 }
+
 input[type=submit]{
     border-radius: 10px;
     
@@ -79,8 +92,24 @@ input[type=submit]{
     border: 2px solid white;
     cursor: grab;
 }
+
 input[type=submit]:hover{
-    background-color: #ffb804;
+    background-color: #d22c58;
     border: 2px solid aliceblue;
 }
 
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: #d22c58;
+    vertical-align: middle;
+   
+}
+
+footer img{
+    width: 110px;
+}
+
+footer p{
+    color: #d8f7f9;
+}
