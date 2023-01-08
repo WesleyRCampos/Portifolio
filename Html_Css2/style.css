@@ -30,6 +30,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover{
+    color: rgb(237, 142, 34);
+    text-decoration: underline;
+}
+
 .banner img{
     width: 100%;
 }
@@ -39,4 +44,18 @@ main{
     background-image: url("background.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgb(226, 110, 43);
+}
+
+footer img {
+    width: 30%;
+}
+
+.copyright{
+    color: white;
 }
