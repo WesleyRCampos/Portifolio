@@ -1,0 +1,122 @@
+body{
+    margin:0 auto;
+}
+.Menu-lateral{
+    position: absolute;
+    height: 400PX;
+    width: 140px;
+    left: -10px;
+    background-color: rgba(47, 0, 255, 0.468);
+    text-align:left;
+    border-radius:0px 16px 16px 0px ;
+    margin-top: 10px;
+}
+.Menu-lateral:hover{
+    background-image: url(../icons/1667000200745[1].png);
+    height: 400PX;
+    width: 400PX;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0px;
+    background-color:  rgba(68, 61, 100, 0.799);
+}
+.Perfil img{
+    margin-top: 20px;
+    width: 70px;
+    border-radius: 50%;
+    padding:0;
+    border: 0;
+    margin-left: 0px;
+    border: 3px groove;
+}
+.Perfil p{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+img{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 3px groove;
+    border-radius: 8px;
+    background-color: aliceblue;
+
+}
+p{
+    font-family: 'VT323', monospace;
+    position: absolute;
+    width:100%;
+    font-size: 25px;
+    left: -120px;
+    margin-top: 35px;
+    color: white;
+    
+}
+.Menu-lateral p:hover{
+    width: 100px;
+    left: 110px;
+}
+li p{
+    font-family: 'VT323', monospace;
+    position: absolute;
+    width:100%;
+    font-size: 25px;
+    left: -120px;
+    margin-top: 35px;
+    color: white;
+    opacity: 0;
+}
+.Menu-lateral p:hover{
+    opacity: 1;
+    visibility: visible;
+    width: 100px;
+    left: 110px;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+.Letra-detalhe {
+    position: absolute;
+    justify-content: center;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 1500%;
+    color:  rgb(255, 37, 8);
+    text-shadow:rgba(24, 31, 35, 0.799) -10px 10px;
+}
+.letra > span{
+    transform: translateX(-1px) translateY(46px) rotate(-12deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Slabo 13px', serif;
+}
+.Intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragrafo{
+    font-size: 250%;
+    position: absolute;
+    justify-content: center;
+    top: 20%;
+    left: 550px;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(68, 61, 100, 0.468);
+}
+.paragrafo .Letra-detalhe2{
+    color:  rgb(255, 37, 8);
+    text-shadow:rgba(24, 31, 35, 0.799) -1px 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Slabo 13px', serif;
+}

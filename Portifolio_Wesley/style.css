@@ -1,0 +1,120 @@
+header {
+    
+    padding: 20px 0;
+    background-color: #000000;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;  
+}
+
+img {
+    width: 200px;
+}
+nav {
+    
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 10px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #09BDEE;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: rgb(237, 142, 34);
+    text-decoration: underline;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+
+}
+.banner video{
+    width: 70%;
+}
+
+main{
+    background-color: #000000;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 5% 20% 5% 20%;
+    background-color: #000000;
+}
+.box li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    vertical-align: middle;
+    background-color:#09BDEE;
+    width: 483px;
+    height: 590px;
+    margin: 10px;
+    border-radius: 124px;
+    border: 2px solid black;
+}
+
+.box li:hover{
+    width: 1283px;
+    border-radius: 96px;
+    margin: 10px -5px;
+}
+
+.box li:nth-last-child(1){
+    margin-right: 0px;
+}
+
+.box li:nth-last-child(5){
+    margin-left: 0px;
+}
+
+.box img {
+    width: 60%;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid ;
+}
+
+.box h1 {
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgb(0, 255, 60);
+}
+
+footer img {
+    width: 10%;
+}
+
+.copyright{
+    font-size: 45%;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+
+}

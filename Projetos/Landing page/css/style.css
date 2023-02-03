@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+
+    margin: 0% 10% 0% 10%;
+}
+.logo{
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+    position:relative;
+    background-color: rgba(3, 29, 36, 0.686);
+    align-items: center;
+   
+    margin: 5% 0% 5% 0%;
+}
+.oferta{
+    text-align: center;
+    padding: 10% 0% 25% 0%;
+}
+.oferta p{
+    display:inline-flex;
+    justify-content: center;
+    color: white;
+    font-size: 100%;
+    padding: 5px;
+    
+}
+.oferta .promo, .oferta2 .promo{
+    font-size: 300%;
+    font-family: 'Anton', sans-serif;
+    padding: 5px;
+}
+.logo img{
+    width: 40px;
+    margin: 2%;
+    position: absolute;
+}
+.logo-title{
+    color: white;
+    margin-left: 20%;
+}
+.oferta .promo-buton{
+    display:inline-flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    border-radius: 16px;
+    border: 5px solid white;
+    color:black
+}
+.oferta .promo-buton:hover{
+    padding: 5px;
+    margin-top: 50px;
+    background-color: rgba(3, 29, 36, 0.686);
+    border-radius: 16px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    color:white
+}
+.container-cabecario{
+    background-image: url(../imag/Spotify.jpg);
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.boton{
+    background-color: rgba(3, 29, 36, 0.658);
+    
+}
+.boton-up{
+    background-color:white;
+    width: 3%;
+    padding: 1%;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    transform-origin: top 0;
+    margin-top: -2%;
+}
+h2{
+    text-align: center;
+    padding: 5%;
+    color: aliceblue;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+li{
+    display: table;
+    vertical-align: middle;
+    justify-content: center;
+    padding: 1%;
+}
+img{
+    margin: auto;
+    display: block;
+    width: 80%;
+    padding: 5%;
+}
+.vantagens{
+    font-size: 70%;
+    text-align: center;
+    color: black;
+    padding: 5%;
+}
+.boton-dawn{
+    background-color:white;
+    width: 3%;
+    padding: 1%;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    transform-origin: top 0;
+    margin-bottom: -2%;
+}
+.container-rodape{
+    background-image: url(../imag/spotify-11.jpg);
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.oferta2{
+    text-align: center;
+    padding: 20% 0% 20% 0%;
+    
+}
+.oferta2 p{
+    display:inline-flex;
+    justify-content: center;
+    color: white;
+    font-size: 100%;
+    padding: 5px;
+}
+.promo{
+    font-size: 300%;
+    font-family: 'Anton', sans-serif;
+}
+.oferta2 .experimente{
+    display:inline-flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    border-radius: 16px;
+    border: 5px solid white;
+    color:black
+}
+.oferta2 .experimente:hover{
+    padding: 5px;
+    margin-top: 50px;
+    background-color: rgba(3, 29, 36, 0.686);
+    border-radius: 16px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    color:white
+}
+ .rodape{
+    position: relative;
+    text-align: center;
+    background-color: black;
+    padding: 5%;
+    color: white;
+    top: 50%;
+}
+.barra{
+    display:inline-flex;
+    justify-content: center;
+}

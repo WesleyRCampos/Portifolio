@@ -1,0 +1,100 @@
+header {
+    padding: 20px 0;
+    
+}
+
+.caixa {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 2% 5% 0% 5%;
+    background-color: palevioletred;
+}
+
+.caixa h1 {
+    color: #ffffff;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+    margin: 0% -5% 2% 0%;
+    border: 2px solid white;
+}
+nav {
+    position: absolute;
+    left: 70vw;
+    top: 45px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px 10px 10px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(237, 142, 34);
+    text-decoration: underline;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.contagem {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.contagem h1 {
+    color: rgb(175, 39, 123);
+    font-size: 2em;
+    padding: 2%;
+}
+
+.date {
+    display: none;
+}
+
+.contagem ul {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    border: 5%;
+}
+
+.contagem li {
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.contagem span {
+    background-image: linear-gradient(rgba(132, 18, 85, 0.642) 35%, rgb(255, 255, 255) 55%, rgba(132, 18, 85, 0.642) 65%);
+    color: rgb(175, 39, 123);
+    border: 15px;
+    padding: 15px 35%;
+}
+
+.contagem h2 {
+    padding: 25px;
+    color: rgb(175, 39, 123)
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgba(132, 18, 85, 0.642);
+}
+
+
+.copyright{
+    color: white;
+}

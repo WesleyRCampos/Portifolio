@@ -1,0 +1,288 @@
+.Container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:10%;
+    margin: 2% 0% 2% 0% ;
+    background-color: rgb(234, 112, 234);
+}
+.Container .Estatico{
+    color: rgb(78, 25, 64);
+    font-size: 85px;
+    font-weight: 200;
+}
+.Container .Dinamico{
+    line-height: 84px;
+    height: 79px;
+    overflow: hidden;
+}
+.Dinamico li{
+    background-color: rgb(234, 112, 234);
+    color: white;
+    list-style: none;
+    font-size: 85px;
+    font-weight: 200;
+    left: 0;
+    position: relative;
+    top: 0;
+    animation: slide 18s steps(10) infinite;
+    
+}
+@keyframes slide{
+    100%{
+        top:-850px
+    }
+}
+.Dinamico li span::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    animation: typing 1.8s steps(15) infinite;
+   
+}
+.Dinamico li span{
+    position: relative;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.Banner{
+    background-color:  rgb(234, 112, 234);
+}
+.Banner img{
+    display: block;
+    margin:auto;
+    border: 10px solid white;
+    width: 80%;
+    height: 70%;
+}
+.flexslider{
+    width: 0%;
+    background-color: black;
+}
+.slider {
+    display: block;
+    height: 65%;
+    width: 50%;  
+}
+
+.slider li {
+    position: absolute;
+    list-style: none;
+    height: 65%;
+    width: 30%;
+    top: 75%;
+    right: 30%; 
+}
+.slider img {
+    display: flex;
+    position: absolute;
+    margin-top: 1%;
+    border: 10px solid rgb(234, 112, 234);
+    border-radius: 50%; 
+    height: 88%; 
+    align-content: center;
+}
+.slider input {
+    display: none;
+}
+.slider label {
+    background-image: url("../assets/rosa.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    z-index: 10;
+}
+.slider label:hover{
+    height:30px;
+    width: 25px;
+}
+.slider li:nth-child(1) label {
+    left: 20px;
+    top: 60px;
+}
+.slider li:nth-child(2) label {
+    left: -5px;
+    top: 110px;
+}
+.slider li:nth-child(3) label {
+    left: -20px;
+    top: 170px;
+}
+.slider li:nth-child(4) label {
+    left: -25px;
+    top: 240px;
+}
+.slider li:nth-child(5) label {
+    left: -20px;
+    top: 310px;
+}
+.slider li:nth-child(6) label {
+    left: 5px;
+    top: 370px;
+}
+.slider li:nth-child(7) label {
+    left: 50px;
+    top: 430px;
+}
+.slider li:nth-child(8) label {
+    left: 275px;
+    top: 430px;
+}
+.slider li:nth-child(9) label {
+    left: 310px;
+    top: 375px;
+}
+.slider li:nth-child(10) label {
+    left: 345px;
+    top: 310px;
+}
+.slider li:nth-child(11) label {
+    left: 360px;
+    top: 240px;
+}
+.slider li:nth-child(12) label {
+    left: 355px;
+    top:170px;
+}
+.slider li:nth-child(13) label {
+    left: 340px;
+    top:110px;
+}
+.slider li:nth-child(14) label {
+    left: 310px;
+    top: 60px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+@media only screen and (max-width: 600px) {
+    .Container{
+        height: 1%;
+    }
+    .Container .Estatico{
+    font-size: 25px;
+    font-weight: 50;
+    height: -49px;
+    }
+    .Container .Dinamico{
+        line-height: 84px;
+        height: 69px;
+    }
+    .Dinamico li{
+        font-size: 25px;
+        font-weight: 50;
+    }
+    .Banner img{
+        display: block;
+        margin:auto;
+        border:0px;
+        width: 100%;
+        height: 70%;
+    }
+    .slider li{
+        height: 100px;
+        width: 5px;
+        top: 26%;
+        right: 63%; 
+    }
+    .slider img {
+        margin-top: 1%;
+        border: 5px solid rgb(234, 112, 234);
+        height: 150%; 
+    }
+    .slider label {
+        background-image: url("../assets/rosa.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 10px;
+        cursor: pointer;
+        display: block;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        width: 5px;
+        z-index: 10;
+    }
+    .slider label:hover{
+        height:11px;
+        width: 6px;
+    }
+    .slider li:nth-child(1) label {
+    left: 15px;
+    top: 2px;
+}
+.slider li:nth-child(2) label {
+    left: -1px;
+    top: 20px;
+}
+.slider li:nth-child(3) label {
+    left: -9px;
+    top: 45px;
+}
+.slider li:nth-child(4) label {
+    left: -12px;
+    top: 71px;
+}
+.slider li:nth-child(5) label {
+    left: -10px;
+    top: 99px;
+}
+.slider li:nth-child(6) label {
+    left: 0px;
+    top: 125px;
+}
+.slider li:nth-child(7) label {
+    left: 20px;
+    top: 148px;
+}
+.slider li:nth-child(8) label {
+    left: 100px;
+    top: 148px;
+}
+.slider li:nth-child(9) label {
+    left: 112px;
+    top: 125px;
+}
+.slider li:nth-child(10) label {
+    left: 122px;
+    top: 99px;
+}
+.slider li:nth-child(11) label {
+    left: 128px;
+    top: 71px;
+}
+.slider li:nth-child(12) label {
+    left:122px;
+    top:45px;
+}
+.slider li:nth-child(13) label {
+    left: 112px;
+    top:20px;
+}
+.slider li:nth-child(14) label {
+    left: 100px;
+    top: 2px;
+}
+}

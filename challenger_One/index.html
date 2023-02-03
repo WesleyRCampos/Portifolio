@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Decoder One</title>
+    <link rel="stylesheet" href="css/normalizar.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="logo">
+            <img src="./Vector.png">
+        </div>
+        <section id="texto">
+            <textarea id="texto"  placeholder="Digite Seu texto"></textarea>
+        </section>
+        <div class="retangulo">
+            <img src="./High quality products 1 1.svg">
+        </div>
+        <div class="quadrado-cripto">
+            <p >Nenhuma mensagem encontrada</p>
+            <textarea id="cripto" name="text"  
+            placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+            <button id="copiar" onclick="copiar()">copiar</button>
+        </div>
+        <div class="info">
+            <p class="exclamação">&#33;</p>
+            <p class="informacao">Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="botao-cripto">
+            <div class="botao">
+                <button onclick ="criptografar()" >Criptografar</button>
+            </div>
+            <div class="botao-2">
+                <button onclick ="descriptografar()" >Descriptografar</button>
+                
+            </div>
+        </div>
+        <script src="js/criptografar.js"></script>
+       
+    </main>
+   
+</body>
+</html>

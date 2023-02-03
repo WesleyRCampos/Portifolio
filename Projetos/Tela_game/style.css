@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(177, 171, 171);
+    border: 10px solid rgb(60, 58, 58);
+    border-radius: 40px ;
+    padding: 50px;
+}
+main {
+    margin: auto;
+    height: 825px;
+    width: 1300px;
+    border-radius: 250px;
+    background-color: rgb(46, 39, 79);
+
+}
+
+.nav_tabs {
+    width: 800px;
+    height: 800px;
+    left: 550px;
+    top: 30px;
+    position: relative;
+}
+
+.nav_tabs ul {
+    list-style: none;
+
+}
+
+.nav_tabs ul li{
+    float: left;
+}
+
+.nav_tabs label {
+    width: 100px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20%;
+    display: block;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.tab1 label {
+    background-image: url(./icons/star\ \(2\).png);
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.tab2 label {
+    background-image: url(./icons/note\ \(2\).png);
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+input:checked ~ label {
+    background-color: rgba(128, 128, 128, 0.262);
+   
+}
+
+.rd_tabs1:checked ~ label {
+    background-image: url(./icons/star\ \(1\).png);
+}
+
+.rd_tabs2:checked ~ label {
+    background-image: url(./icons/note\ \(1\).png);
+}
+
+input {
+    display: none;
+}
+
+.content {
+    border-top: 5px solid rgb(58, 58, 108);
+    background-color: rgba(128, 128, 128, 0.062);
+    display: none;
+    position: absolute;
+    height: 620px;
+    width: 630px;
+    border-radius: 10%;
+    left: 0;
+}
+
+.content article {
+    padding: 30px;
+}
+
+input:checked ~ .content {
+    display: block;
+}
+
+.perfil li {
+    display:flex;
+    height: 100px;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    text-align: center;   
+}
+
+.perfil img {
+    height: 90px;
+}
+
+.perfil h2 {
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+}
