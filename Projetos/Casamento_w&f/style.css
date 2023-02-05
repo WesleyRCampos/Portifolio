@@ -1,13 +1,14 @@
 header {
-    padding: 20px 0;
-    
+    padding: 20px 5% 20px 5%;
+   
 }
 
 .caixa {
     position: fixed;
     top: 0;
-    width: 100vw;
-    padding: 2% 5% 0% 5%;
+    border-radius:0px 0px 20px 20px;
+    width: 75%;
+    padding: 2% 10% 0% 5%;
     background-color: palevioletred;
 }
 
@@ -16,36 +17,40 @@ header {
     width: 150px;
     height: 50px;
     text-align: center;
+    font-family: 'Alex Brush', cursive;
     font-size: 50px;
     margin: 0% -5% 2% 0%;
     border: 2px solid white;
 }
 nav {
     position: absolute;
-    left: 70vw;
+    left: 50%;
     top: 45px;
 }
 
 nav li {
     display: inline;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 10px 0px;
 }
 
 nav a {
     text-transform: uppercase;
-    color: #ffffff;
+    color: black;
     font-weight: bold;
-    font-size: 14px;
+    font-family: 'Alex Brush', cursive;
+    font-size: 15px;
+    letter-spacing:0.5em ;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: rgb(237, 142, 34);
+    color: rgb(255, 251, 251);
     text-decoration: underline;
 }
 
 .banner img {
     width: 100%;
+    border-radius:0px 0px 20px 20px;
 }
 
 .contagem {
@@ -56,7 +61,8 @@ nav a:hover {
 
 .contagem h1 {
     color: rgb(175, 39, 123);
-    font-size: 2em;
+    font-family: 'Alex Brush', cursive;
+    font-size: 3em;
     padding: 2%;
 }
 
@@ -78,19 +84,46 @@ nav a:hover {
 
 .contagem span {
     background-image: linear-gradient(rgba(132, 18, 85, 0.642) 35%, rgb(255, 255, 255) 55%, rgba(132, 18, 85, 0.642) 65%);
-    color: rgb(175, 39, 123);
+    font-size: 1.4em;
+    color: rgb(0, 0, 0);
     border: 15px;
+    border-radius: 10%;
     padding: 15px 35%;
 }
 
 .contagem h2 {
-    padding: 25px;
+    font-family: 'Alex Brush', cursive;
+    padding: 35px;
+    font-size: 1.5em;
     color: rgb(175, 39, 123)
 }
 
-footer {
+.historia {
+    width: 85%;
+    margin: auto;
+    padding: 5% 2.5% 5% 2.5%;
+    border-radius: 20px 20px 0px 0px ;
+    font-family: 'Alex Brush', cursive;
+    background-color: palevioletred;
+    
+}
+
+.historia h1 {
+    font-size: 2.5em;
     text-align: center;
-    padding: 40px 0;
+}
+
+.historia p {
+    padding-top: 5%;
+    font-size: 2em;
+    text-align: justify;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding: 20px 5% 20px 5%;
     background-color: rgba(132, 18, 85, 0.642);
 }
 
