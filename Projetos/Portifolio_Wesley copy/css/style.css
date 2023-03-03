@@ -1,0 +1,163 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(58, 100, 116);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+   
+.logo{
+   font-size: 25px;
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+   cursor: default;
+}
+
+.nav a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.nav a:hover,
+.nav a.active{
+    color: aqua;
+}
+    
+.menu-mode{
+    display: none;
+}
+.Conteudo{
+    background-color:rgb(0, 16, 33) ;
+    top: 0;
+    width: 100%;
+   
+}
+.Apresentacao{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10% 0% 0% 20%;
+    background: linear-gradient(to top ,rgb(0, 16, 33),rgb(58, 100, 116));
+    
+}
+.Info{
+    display: block;
+    font-size: 80%;
+    width: 68%;
+    margin-right: 15%;
+    
+}
+
+.Intro{
+    text-align: justify;  
+}
+
+.Nome{
+    color:white;
+    letter-spacing: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+p{
+    color: silver;
+}
+.porti-Nome{
+    color:white;
+    letter-spacing: 10px;
+    overflow: hidden;
+    white-space: nowrap;    
+    color: rgb(0, 183, 255);
+}
+.porti-Nome {
+    animation:
+    cursor 500ms steps(19) infinite normal,
+    porti-Nome 4s steps(20) 1s normal both;
+}
+.line {
+    border-right: 2px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+@keyframes porti-Nome{
+    from {
+        width: 0;
+    }
+    to {
+        width: 360px;
+    }
+}
+@keyframes cursor {
+    from {
+        border-right-color: aliceblue;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+.Botoes{
+    margin-top: 50px;
+}
+.Botoes a{
+    font-size: 70%;
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(0, 183, 255);
+    border-radius: 36px;
+    padding:8px;
+    margin-right: 40px;
+    transition: 0.3s ease-in-out;
+}
+.Botoes a:hover{
+    font-size: 65%;
+    margin-right: 45px;
+    background-image: linear-gradient(to right ,rgb(0, 183, 255),rgb(157, 221, 246));
+}
+.Cv{
+
+    border: none;
+    padding: 10px;
+    background-image: linear-gradient(to right ,rgb(157, 221, 246),rgb(0, 183, 255));
+}
+.perfil img{
+    width: 50%;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+.Sobre p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+
+@media only screen and (max-width: 950px) {
+   
+   
+}
+@media only screen and (max-width: 600px){
+}
