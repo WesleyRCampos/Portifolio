@@ -2,24 +2,26 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+
 }
 
 header{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    background: rgb(58, 100, 116);
-    display: flex;
-    justify-content: space-between;
+    margin: 2% ;
+    width: 96%;
+    background:black;
+    display: block;
     align-items: center;
-    z-index: 100;
-    
+    border-top: 1px gray solid; 
+    border-bottom: 1px gray solid;
+    padding: 2% 0% 2% 0%;
 }
 header img {
     width: 10%;
+    top: 0%;
+    position:absolute;
+    left: 50%;
+    
 }
    
 .logo{
@@ -29,55 +31,83 @@ header img {
    font-weight: 600;
    cursor: default;
 }
+.nav{
+    display: flex;
+    width: 100vw;
 
-.nav a{
+}
+
+#nav a{
     font-size: 18px;
     color: white;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
     transition: .3s;
 }
+
 
 .nav a:hover{
     color: aqua;
 }
-#menu{
+#menu1, #menu{
     display: flex;
-    gap: -10px;
     list-style: none;
+    width: 40%;
+}
+#menu1{
+    padding-right:25%;
+}
+#menu {
+    padding-left:25%;
 }
 .menu-mode{
     display: none;
 }
+
 .Conteudo{
     background-color:rgb(0, 16, 33) ;
     top: 0;
     width: 100%;
    
 }
+.Conteudo .rota{
+    top: 20%;
+    left: 8%;
+    position:absolute;
+    font-size: 90%;
+    color: white;
+   
+ }
+ .rota img{
+    width: 10%;
+    margin: 1% 2% -1% 1%;
+ }
 .Apresentacao{
     display:flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
     padding: 10% 0% 10% 20%;
-    background: linear-gradient(to top ,rgb(0, 0, 0),rgb(58, 100, 116));
+    background-color: black;
     
 }
 .Info{
     display: block;
+    position: absolute;
     font-size: 80%;
-    width: 58%;
-    margin-right: 15%;
-    
+    width: 58%;  
 }
 
 .Intro{
-    text-align: justify;  
+    display: block;
+    margin-right: 70%;
+    font-family: 'Texturina', serif;
+    font-style: italic; 
 }
 
 .Nome{
+    width: 400%;
+    font-size: 500%;
     color:white;
     letter-spacing: 2px;
     overflow: hidden;
@@ -89,7 +119,7 @@ header img {
     color: silver;
 }
 .porti-Nome{
-    font-size: 300%;
+    font-size: 500%;
     color:white;
     letter-spacing: 5px;
     overflow: hidden;
@@ -98,7 +128,7 @@ header img {
 }
 .porti-Nome {
     animation:
-    cursor 500ms steps(9) infinite normal,
+    cursor 400ms steps(10) infinite normal,
     porti-Nome 4s steps(20) 1s normal both;
 }
 .line {
@@ -112,7 +142,7 @@ header img {
         width: 0;
     }
     to {
-        width: 324px;
+        width: 564px;
     }
 }
 @keyframes cursor {
@@ -131,9 +161,9 @@ header img {
     font-weight: bold;
     text-decoration: none;
     color: black;
-    border-radius: 36px;
+    border-radius: 12px;
     border: none;
-    padding: 15px 50px 15px 50px;
+    padding: 10px 40px 10px 40px;
     background-color: rgb(0, 183, 255);
     transition: 0.3s ease-in-out;
 }
@@ -152,7 +182,7 @@ h2{
     text-align: center;
 }
 .Sobre{
-    background-color: black;
+    background-color: rgba(35, 12, 249, 0);
 }
 .Sobre p{
     display: flex;
@@ -187,17 +217,21 @@ nav{
     margin: 0% 5% 0% -11%;
     transition:all 5ms ease-in;
 }
-
 #menu{
+    display: none;
+}
+
+#menu1{
     display: flex;
     gap: -10px;
     list-style: none;
 }
-#menu a{
+#menu1 a{
     font-size: 15px;
     display: flex;
     margin: 0px 5px;
 }
+
 
 #menu-btn{
     display: block;
@@ -210,12 +244,8 @@ nav{
     width: 20px;
     
 }
-#menu {
-    display: none;
-}
-#nav.active #menu{
-    display: flex;
-}
+
+
 }
 @media only screen and (max-width: 600px){
     .Apresentacao{
