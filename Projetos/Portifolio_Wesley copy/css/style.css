@@ -2,25 +2,25 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    color: black;
 
 }
 
 header{
+    display:block;
     position: fixed;
-    margin: 2% ;
-    width: 96%;
+   
+    width: 100vw;
     background:black;
     display: block;
     align-items: center;
-    border-top: 1px gray solid; 
-    border-bottom: 1px gray solid;
-    padding: 2% 0% 2% 0%;
+    
 }
 header img {
     width: 10%;
-    top: 0%;
+    top: 20%;
     position:absolute;
-    left: 50%;
+    left: 45%;
     
 }
    
@@ -34,6 +34,11 @@ header img {
 .nav{
     display: flex;
     width: 100vw;
+    width: 96%;
+    margin: 2% 2% 0% 2%;
+    border-top: 1px gray solid; 
+    border-bottom: 1px gray solid;
+    padding: 2% 0% 2% 0%;
 
 }
 
@@ -46,7 +51,7 @@ header img {
 }
 
 
-.nav a:hover{
+#nav a:hover{
     color: aqua;
 }
 #menu1, #menu{
@@ -54,6 +59,7 @@ header img {
     list-style: none;
     width: 40%;
 }
+
 #menu1{
     padding-right:25%;
 }
@@ -73,11 +79,15 @@ header img {
 .Conteudo .rota{
     top: 20%;
     left: 8%;
-    position:absolute;
+    position:fixed;
     font-size: 90%;
-    color: white;
-   
+    color: white;  
  }
+ 
+ .Conteudo .rota:hover{
+    color: aqua;
+ }
+
  .rota img{
     width: 10%;
     margin: 1% 2% -1% 1%;
@@ -86,14 +96,13 @@ header img {
     display:flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
     padding: 10% 0% 10% 20%;
     background-color: black;
     
 }
 .Info{
-    display: block;
-    position: absolute;
+    
+    position:relative;
     font-size: 80%;
     width: 58%;  
 }
@@ -173,9 +182,7 @@ header img {
     color:white ;
 }
 
-.perfil img{
-    width: 55%;
-}
+
 
 h2{
     color: white;
@@ -190,9 +197,7 @@ h2{
     align-items: center;
     text-align: justify;
 }
-#menu-btn{
-    display: none;
-}
+
 @media only screen and (max-width: 950px) {
 .header{
     box-sizing: border-box;
@@ -204,62 +209,10 @@ h2{
     justify-content: space-between;
 
 }
-#logo {
-    width: 75px;
-    font-weight: bold;
-    
-    
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    margin: 0% 5% 0% -11%;
-    transition:all 5ms ease-in;
-}
-#menu{
-    display: none;
-}
-
-#menu1{
-    display: flex;
-    gap: -10px;
-    list-style: none;
-}
-#menu1 a{
-    font-size: 15px;
-    display: flex;
-    margin: 0px 5px;
-}
-
-
-#menu-btn{
-    display: block;
-    background-color:transparent;
-    border: 0;
-   
-    
-}
-.button{
-    width: 20px;
-    
-}
 
 
 }
 @media only screen and (max-width: 600px){
-    .Apresentacao{
-        display: flex;
-        flex-direction: column-reverse;
-        padding:20% 0% 0% 0%;
-    }
-    .Info{
-        margin:0% 15% 0% 0%;
-    }
-    .perfil img{
-        display: block;
-        align-items: center;
-        width: 80%;
-    }
+
   
 }
