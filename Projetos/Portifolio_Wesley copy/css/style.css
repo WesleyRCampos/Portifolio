@@ -8,7 +8,7 @@
 header{
     display:block;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     display: block;
     align-items: center;
     
@@ -30,10 +30,11 @@ header img {
 }
 .nav{
     display: flex;
-    width: 100vw;
+    width: 100%;
     border-bottom: 3px white solid;
     padding: 2% 0% 2% 0%;
-    background-color:black;
+    background-color:mediumblue;
+    font-family: 'Sedgwick Ave Display', cursive;
 
 }
 
@@ -47,7 +48,7 @@ header img {
 
 
 #nav a:hover{
-    color: blue;
+    color: grey;
 }
 #menu1, #menu{
     display: flex;
@@ -71,26 +72,38 @@ header img {
     width: 100%;
    
 }
-.Conteudo .rota{
-    top: 15%;
-    left: 8%;
+.rota{
+    display: flex;
+    width: 100%;
+    height: 5%;
+    top: 10%;
     position:fixed;
-    font-size: 90%;
-    color: white;  
+    background-color:grey ;
+    padding-left: 6%;
+}
+.rota img{
+    width: 20px;
+    height: 50%;
+    margin: 0.5% 1px 0% 0%;
  }
+.rota .caminho{
+    font: 80%;
+    color: white;
+    margin-left: 0;
+    margin-top: 7px;
+}
  
- .Conteudo .rota:hover{
-    color: aqua;
+ .rota .caminho:hover{
+    color: black;
  }
 
- .rota img{
-    width: 10%;
-    margin: 1% 2% -1% 1%;
- }
+
 .Apresentacao{
-    display:flex;
+    display:block;
     width: 100%;
-    padding: 10% 0% 0% 0%;
+    height: 100%;
+    padding: 6% 0% 0% 0%;
+    
     
     
 }
@@ -98,20 +111,26 @@ header img {
     display:flex;
     align-items: center;
     font-size: 80%;
-    width: 58%;  
+    background-color:mediumblue;
+    
+ 
 }
 
 .Intro{
+    width: 100vw;
     display: block;
     font-family: 'Texturina', serif;
-    font-style: italic; 
+    font-style: italic;
+    top: 0;
+    
+  
 }
 
 .Nome{
     display: flex;
-    width: 200%;
+    width: 100%;
     font-size: 200%;
-    padding-right: 290px;
+    padding-left: 220px;
     color:white;
     letter-spacing: 2px;
     overflow: hidden;
@@ -119,6 +138,7 @@ header img {
 
 }
 .Intro p{
+    padding-left: 220px;
     padding-top: 7%;
     color: silver;
 }
@@ -128,7 +148,7 @@ header img {
     letter-spacing: 5px;
     overflow: hidden;
     white-space: nowrap;    
-    color: blue;
+    color:white;
 }
 .porti-Nome {
     animation:
@@ -139,24 +159,21 @@ header img {
     border-right: 2px solid white;
     overflow: hidden;
     white-space: nowrap;
+}
+.wesleyImg{
+    width: 50%;
+    background-color: white;
+    padding-left: 6%;
+    padding-top: 6%;
+    padding-right: 5%;
     
 }
-
 .wesleyImg img{
-    display: flex;
-    margin-left: 50%;
-    width: 100%;
-    border-radius: 35% 5% 60% 5% ;
-    background-image: linear-gradient(to right,white , rgb(0, 0, 0)40%, blue 290% );
-    transition: all 50ms ease-in-out;
+    width: 120%;
+    height: 100%;
+   
 }
-.wesleyImg img:hover{
-    
-    border-radius: 5% 35% 5% 60% ;
-    background: white;
-    transition: all 50ms ease-in-out;
 
-}
 
 @keyframes porti-Nome{
     from {
