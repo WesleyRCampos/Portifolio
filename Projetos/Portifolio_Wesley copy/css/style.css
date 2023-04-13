@@ -1,5 +1,5 @@
 *{
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
 
@@ -30,6 +30,7 @@ header img {
 }
 .nav{
     display: flex;
+    
     width: 100%;
     border-bottom: 3px white solid;
     padding: 2% 0% 2% 0%;
@@ -54,6 +55,7 @@ header img {
     display: flex;
     list-style: none;
     width: 40%;
+    margin: 0 auto;
 }
 
 #menu1{
@@ -104,8 +106,6 @@ header img {
     height: 100%;
     padding: 6% 0% 0% 0%;
     
-    
-    
 }
 .Info{
     display:flex;
@@ -130,7 +130,7 @@ header img {
     display: flex;
     width: 100%;
     font-size: 200%;
-    padding-left: 220px;
+    padding-left: 50px;
     color:white;
     letter-spacing: 2px;
     overflow: hidden;
@@ -138,7 +138,7 @@ header img {
 
 }
 .Intro p{
-    padding-left: 220px;
+    padding-left: 50px;
     padding-top: 7%;
     color: silver;
 }
@@ -159,6 +159,7 @@ header img {
     border-right: 2px solid white;
     overflow: hidden;
     white-space: nowrap;
+    padding-left: 40px;
 }
 .wesleyImg{
     width: 50%;
@@ -174,13 +175,148 @@ header img {
    
 }
 
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.swiper {
+    width: 850px;
+    
+    
+}
+
+.card .image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: gray;
+    border: 5px solid black;
+}
+.card .image img:nth-of-type(1n){
+    background-color: aqua;
+}
+
+.card {
+    position: relative;
+    background: black;
+    border: 6px solid aqua;
+    border-radius: 20px;
+    width: 280px;
+    margin: 5% 0% 10% 0%;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    clip-path: circle(55% at 0 0);
+    border-top-right-radius: 10px;
+}
+
+.card .card-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    z-index: 100;
+}
+
+.card .social-media{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .social-media i{
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card .social-media i:hover{
+    color: aqua;
+}
+.card .social-media i::selection{
+    color: aqua;
+}
+.card .name-profession{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    color: white;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.name-profession .name {
+    font-size: 20px;
+    font-weight:600;
+}
+
+.name-profession .profession {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.card .rating i{
+    font-size: 18px;
+    color: aqua;
+    margin: 0 2px;
+}
+
+.card .button{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card .button button {
+    background: aqua;
+    border: none;
+    outline: none;
+    color:black;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card .button button:hover{
+    background-color: white;
+}
 
 @keyframes porti-Nome{
     from {
         width: 0;
     }
     to {
-        width: 564px;
+        width: 584px;
     }
 }
 @keyframes cursor {

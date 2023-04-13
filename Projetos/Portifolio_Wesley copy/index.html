@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link href="css/style.css" rel="stylesheet"  type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +61,146 @@
         
             </div>
         </div>
-        <script src="js/criptografar.js"></script>
+        <section class="project">
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./icons/pngwing.com (5).png" alt="">
+                            </div>
+
+                            <div class="social-media">
+                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-sharp fa-solid fa-share"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Conversor de moedas</span>
+                                <span class="profession">Projeto em Java</span>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="button">
+                                <button class="aboutMe">Saiba Mais</button>
+                                <button class="hireMe">Contar-me</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./icons/chrome_image_2_de_abr._de_2023_16_06_31_BRT[1].png" alt="">
+                            </div>
+
+                            <div class="social-media">
+                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-sharp fa-solid fa-share"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Conversor de moedas</span>
+                                <span class="profession">Projeto em Java</span>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="button">
+                                <button class="aboutMe">Saiba Mais</button>
+                                <button class="hireMe">Contar-me</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./icons/chrome_image_2_de_abr._de_2023_16_06_31_BRT[1].png" alt="">
+                            </div>
+
+                            <div class="social-media">
+                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-sharp fa-solid fa-share"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Conversor de moedas</span>
+                                <span class="profession">Projeto em Java</span>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="button">
+                                <button class="aboutMe">Saiba Mais</button>
+                                <button class="hireMe">Contar-me</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+           
+        </section>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 1,
+              spaceBetween:30,
+              centeredSlides: false,
+              slidesPerGroupSkip: 1,
+              grabCursor: true,
+              keyboard: {
+                enabled: true,
+              },
+              breakpoints: {
+                769: {
+                  slidesPerView: 2,
+                  slidesPerGroup: 2,
+                },
+              },
+              scrollbar: {
+                el: ".swiper-scrollbar",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+            });
+          </script>
+
     </main>
     <footer>
 
