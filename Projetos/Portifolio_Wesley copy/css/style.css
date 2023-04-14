@@ -34,7 +34,7 @@ header img {
     width: 100%;
     border-bottom: 3px white solid;
     padding: 2% 0% 2% 0%;
-    background-color:mediumblue;
+    background-color:black;
     font-family: 'Sedgwick Ave Display', cursive;
 
 }
@@ -43,8 +43,11 @@ header img {
     font-size: 18px;
     color: white;
     text-decoration: none;
-    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: 800;
     transition: .3s;
+    margin: 5px;
+    letter-spacing: 2px;
 }
 
 
@@ -56,6 +59,7 @@ header img {
     list-style: none;
     width: 40%;
     margin: 0 auto;
+    text-transform: uppercase;
 }
 
 #menu1{
@@ -80,7 +84,7 @@ header img {
     height: 5%;
     top: 10%;
     position:fixed;
-    background-color:grey ;
+    background-color:white ;
     padding-left: 6%;
 }
 .rota img{
@@ -90,9 +94,10 @@ header img {
  }
 .rota .caminho{
     font: 80%;
-    color: white;
+    color: black;
     margin-left: 0;
     margin-top: 7px;
+    font-family: 'Luckiest Guy', cursive;
 }
  
  .rota .caminho:hover{
@@ -111,19 +116,16 @@ header img {
     display:flex;
     align-items: center;
     font-size: 80%;
-    background-color:mediumblue;
-    
- 
+    background-color:aqua;
 }
 
 .Intro{
     width: 100vw;
     display: block;
-    font-family: 'Texturina', serif;
+    font-family: 'Luckiest Guy', cursive;
     font-style: italic;
     top: 0;
     
-  
 }
 
 .Nome{
@@ -131,7 +133,7 @@ header img {
     width: 100%;
     font-size: 200%;
     padding-left: 50px;
-    color:white;
+    color:black;
     letter-spacing: 2px;
     overflow: hidden;
     white-space: nowrap;
@@ -140,20 +142,19 @@ header img {
 .Intro p{
     padding-left: 50px;
     padding-top: 7%;
-    color: silver;
+    color: black;
 }
 .porti-Nome{
     font-size: 500%;
-    color:white;
-    letter-spacing: 5px;
+    color:black;
+    letter-spacing: 12px;
     overflow: hidden;
     white-space: nowrap;    
-    color:white;
 }
 .porti-Nome {
     animation:
-    cursor 400ms steps(10) infinite normal,
-    porti-Nome 4s steps(20) 1s normal both;
+    cursor 1200ms steps(10) infinite normal,
+    porti-Nome 6s steps(20) 1s normal both;
 }
 .line {
     border-right: 2px solid white;
@@ -175,6 +176,28 @@ header img {
    
 }
 
+h2{
+    width: 100%;
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    background-color: black;
+    font-family: 'Luckiest Guy', cursive;
+}
+.project-port p{
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 5% 20% 0% 20%;
+    font-weight: 400;
+    font-size: 150%;
+    background-color: black;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
 .project{
     display: flex;
     justify-content: center;
@@ -185,8 +208,7 @@ header img {
 
 .swiper {
     width: 850px;
-    
-    
+       
 }
 
 .card .image {
@@ -267,12 +289,16 @@ header img {
 
 .name-profession .name {
     font-size: 20px;
-    font-weight:600;
+    font-weight:500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+   
 }
 
 .name-profession .profession {
     font-size: 15px;
     font-weight: 500;
+   
 }
 
 .card .rating{
@@ -316,7 +342,7 @@ header img {
         width: 0;
     }
     to {
-        width: 584px;
+        width: 804px;
     }
 }
 @keyframes cursor {
@@ -346,7 +372,6 @@ header img {
     margin-right: 45px;
     color:white ;
 }
-
 
 
 h2{
