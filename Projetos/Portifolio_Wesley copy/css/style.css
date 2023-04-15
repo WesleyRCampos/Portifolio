@@ -2,6 +2,7 @@
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -30,12 +31,10 @@ header img {
 }
 .nav{
     display: flex;
-    
     width: 100%;
     border-bottom: 3px white solid;
     padding: 2% 0% 2% 0%;
     background-color:black;
-    font-family: 'Sedgwick Ave Display', cursive;
 
 }
 
@@ -43,8 +42,7 @@ header img {
     font-size: 18px;
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 500;
     transition: .3s;
     margin: 5px;
     letter-spacing: 2px;
@@ -87,21 +85,27 @@ header img {
     background-color:white ;
     padding-left: 6%;
 }
-.rota img{
-    width: 20px;
-    height: 50%;
-    margin: 0.5% 1px 0% 0%;
- }
+.Conteudo .rota i{
+    color: black;
+    padding-top: 9px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.Conteudo .rota i:hover{
+    color: aqua;
+}
 .rota .caminho{
     font: 80%;
+    font-weight: 500;
     color: black;
     margin-left: 0;
     margin-top: 7px;
-    font-family: 'Luckiest Guy', cursive;
+    
 }
  
  .rota .caminho:hover{
-    color: black;
+    color: aqua;
  }
 
 
@@ -109,105 +113,101 @@ header img {
     display:block;
     width: 100%;
     height: 100%;
-    padding: 6% 0% 0% 0%;
+    
     
 }
 .Info{
     display:flex;
     align-items: center;
-    font-size: 80%;
     background-color:aqua;
 }
 
 .Intro{
-    width: 100vw;
+    width: 100%;
     display: block;
-    font-family: 'Luckiest Guy', cursive;
-    font-style: italic;
     top: 0;
-    
 }
 
 .Nome{
     display: flex;
     width: 100%;
-    font-size: 200%;
-    padding-left: 50px;
+    font-size: 56px;
+    padding-left: 45px;
     color:black;
-    letter-spacing: 2px;
-    overflow: hidden;
-    white-space: nowrap;
+    font-weight:900;
 
 }
 .Intro p{
     padding-left: 50px;
-    padding-top: 7%;
+    font-size: 16px;
     color: black;
 }
 .porti-Nome{
-    font-size: 500%;
-    color:black;
-    letter-spacing: 12px;
+    font-size: 200%;
+    color:white;
     overflow: hidden;
     white-space: nowrap;    
 }
 .porti-Nome {
     animation:
-    cursor 1200ms steps(10) infinite normal,
-    porti-Nome 6s steps(20) 1s normal both;
+    cursor 500ms steps(10) infinite normal,
+    porti-Nome 8s steps(30) 1s normal both;
 }
 .line {
-    border-right: 2px solid white;
+    border-right: 4px solid white;
     overflow: hidden;
     white-space: nowrap;
-    padding-left: 40px;
+    padding-left: 50px;
 }
-.wesleyImg{
-    width: 50%;
-    background-color: white;
-    padding-left: 6%;
-    padding-top: 6%;
-    padding-right: 5%;
-    
-}
+
 .wesleyImg img{
-    width: 120%;
+    width: 100%;
     height: 100%;
    
 }
+.project-port{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top:0;
+    background-color: black;
+}
 
 h2{
+    font-size: 18px;
     width: 100%;
+    font-weight: 500;
     color: white;
     display: block;
     align-items: center;
     justify-content: center;
     font-size: 200%;
     background-color: black;
-    font-family: 'Luckiest Guy', cursive;
 }
 .project-port p{
     display: block;
     width: 100%;
     color: white;
     text-align: center;
-    padding: 5% 20% 0% 20%;
-    font-weight: 400;
-    font-size: 150%;
+    padding: 0% 10%;
+    font-size: 16px;
     background-color: black;
-    font-family: 'Sedgwick Ave Display', cursive;
+   
 }
 
+
 .project{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: black;
+    height: 1075px;
+    
+    margin: 0% 10%;
 }
 
 .swiper {
-    width: 850px;
+    width: 1024px;
        
 }
 
@@ -234,7 +234,7 @@ h2{
     background: black;
     border: 6px solid aqua;
     border-radius: 20px;
-    width: 280px;
+    
     margin: 5% 0% 10% 0%;
 }
 .card::before{
@@ -284,7 +284,7 @@ h2{
     flex-direction: column;
     margin: 10px;
     color: white;
-    font-family: 'Sedgwick Ave Display', cursive;
+    
 }
 
 .name-profession .name {
@@ -292,12 +292,14 @@ h2{
     font-weight:500;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: center;
    
 }
 
 .name-profession .profession {
     font-size: 15px;
     font-weight: 500;
+    margin-top: 8px;
    
 }
 
@@ -337,12 +339,23 @@ h2{
     background-color: white;
 }
 
+.swiper-pagination-bullet {
+    height: 7px;
+    width: 26px;
+    background-color: aqua;
+    border-radius: 26px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color: aqua;
+}
+
 @keyframes porti-Nome{
     from {
         width: 0;
     }
     to {
-        width: 804px;
+        width: 305px;
     }
 }
 @keyframes cursor {
