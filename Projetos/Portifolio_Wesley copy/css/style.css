@@ -14,21 +14,7 @@ header{
     align-items: center;
     
 }
-header img {
-    width: 10%;
-    top: 20%;
-    position:absolute;
-    left: 45%;
-    
-}
-   
-.logo{
-   font-size: 25px;
-   color: white;
-   text-decoration: none;
-   font-weight: 600;
-   cursor: default;
-}
+
 .nav{
     display: flex;
     width: 100%;
@@ -165,6 +151,65 @@ header img {
     height: 100%;
    
 }
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: black;
+}
+
+.about-img img{
+    width: 35vw;
+    padding: 20px;
+}
+.heading {
+    font-size: 4.5rem;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.about-content {
+    padding: 20px;
+}
+
+.about-content h2{
+    text-align: right;
+    line-height: 1.2;
+}
+.about-content span{
+    color: aqua;
+}
+.about-content h3{
+    font-size: 2rem;
+    text-align: right;
+    color: white;
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    text-align: right;
+    color: white;
+}
+.about-content a{
+    display: inline-block;
+    margin-left: 80%;
+    background-color: aqua;
+    color: black;
+    border-radius: 2rem;
+    padding: 1.2rem 2.8rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.about a:hover{
+    background: white;
+    
+}
+
 .project-port{
     justify-content: center;
     align-items: center;
@@ -189,7 +234,7 @@ h2{
     width: 100%;
     color: white;
     text-align: center;
-    padding: 0% 10%;
+    padding: 5% 10%;
     font-size: 16px;
     background-color: black;
    
@@ -198,12 +243,11 @@ h2{
 
 .project{
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 1075px;
-    
-    margin: 0% 10%;
+    height: 500px;
+    margin: 0% 5%;
+   
 }
 
 .swiper {
@@ -234,9 +278,8 @@ h2{
     background: black;
     border: 6px solid aqua;
     border-radius: 20px;
-    
-    margin: 5% 0% 10% 0%;
 }
+
 .card::before{
     content: '';
     position: absolute;
@@ -283,8 +326,7 @@ h2{
     align-items: center;
     flex-direction: column;
     margin: 10px;
-    color: white;
-    
+    color: white;    
 }
 
 .name-profession .name {
@@ -293,14 +335,12 @@ h2{
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-   
 }
 
 .name-profession .profession {
     font-size: 15px;
     font-weight: 500;
     margin-top: 8px;
-   
 }
 
 .card .rating{
@@ -385,7 +425,6 @@ h2{
     margin-right: 45px;
     color:white ;
 }
-
 
 h2{
     color: white;

@@ -1,0 +1,166 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+    display:block;
+    position: fixed;
+    width: 100%;
+    display: block;
+    align-items: center;
+	top: 0;
+    
+}
+  
+
+.nav{
+    display: flex;
+    width: 100%;
+    border-bottom: 3px white solid;
+    padding: 2% 0% 2% 0%;
+    background-color:black;
+
+}
+
+#nav a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+    margin: 5px;
+    letter-spacing: 2px;
+}
+
+
+#nav a:hover{
+    color: grey;
+}
+#menu1, #menu{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+#menu1{
+    padding-right:25%;
+}
+#menu {
+    padding-left:25%;
+}
+.menu-mode{
+    display: none;
+}
+
+main {
+	display:inline-block;
+    width: 940px;
+    margin: 10%;
+
+}
+
+
+.rota{
+    display: flex;
+    width: 100%;
+    height: 5%;
+	right: 0;
+    top: 10%;
+    position:fixed;
+    background-color:white ;
+    padding-left: 6%;
+}
+ .rota i{
+    color: black;
+    padding-top: 9px;
+    cursor: pointer;
+    transition: .3s;
+}
+.rota i:hover{
+    color: aqua;
+}
+.rota .caminho{
+    font: 80%;
+    font-weight: 500;
+    color: black;
+    margin-left: 0;
+    margin-top: 7px;
+    
+}
+ 
+ .rota .caminho:hover{
+    color: aqua;
+ }
+
+form {
+    margin: 40px 0;
+}
+
+form label, form p {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s background;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 40px;
+}
+
+thead {
+	background-color: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px ;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
