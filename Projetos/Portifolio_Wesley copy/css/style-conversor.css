@@ -59,9 +59,9 @@ header{
 
 main {
 	display:inline-block;
-    width: 940px;
-    margin: 10%;
-    
+    width: 100%;
+    padding: 10% 10% 5% 10%;
+       
 }
 
 .rota{
@@ -96,56 +96,58 @@ main {
  
  .rota .caminho:hover{
     color: aqua;
- }
-
-form {
-    margin: 40px 0;
 }
 
-form label, form p {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-    color: white;
+main{
+    width: 100%;
     
 }
 
-fieldset{
-    border: 6px solid aqua;
-    border-radius: 8px;
+ .Projeto-conversor{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color: black;
 }
 
-.input-padrao {
+.Projeto-conversor h2{
+    font-size: 70px;
+    line-height: 1.5;
+    width: 60%;
+    text-align:right;
+    padding-right: 10px;
+    color: black;
+    background-color:white;
     display: block;
-    margin: 0 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    display: block;
+    width: 100%;
+    margin: 5% 0%;
+    text-indent: 15px;
     color: white;
-    padding: 10px 25px;
-    width: 50%;
-    border: 6px solid aqua;
-    border-radius: 8px;
-    
+    text-align: justify; 
+    font-size: 26px;
+    background-color: black;
 }
 
-.checkbox {
-	margin: 20px 0;
+.text::first-letter{
+    text-transform: uppercase;
 }
 
-.enviar {
-	width: 40%;
-	padding: 15px 0;
-	background: aqua;
-	color: black;
-	font-weight: bold;
-	font-size: 18px;
-	border: none;
-	border-radius: 5px;
-	transition: 1s background;
-	cursor: pointer;
-}
-
-.enviar:hover {
-	background: white;
-	transform: scale(1.2);
+.Projeto-conversor span{
+    display: block;
+    width: 100%;
+    margin: 5% 0%;
+    color: white;
+    text-align: justify; 
+    font-size: 26px;
+    background-color: black;
 }
 
 
