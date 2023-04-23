@@ -8,6 +8,8 @@
     <link href="css/style.css" rel="stylesheet"  type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Portifolio_Wesley</title>
 </head>
@@ -42,7 +44,10 @@
                         <img src="./icons/Snapinsta.app_21980685_526441997709137_7744302514064850944_n_1080 (1).jpg" alt="imagem perfil">
                     </div>
                     <div class="Intro">
-                        <h1 class=" Nome">Ei, Eu Sou Wesley Rodrigues<br></h1>
+                        <h1 class=" Nome">Ei, Eu Sou</h1> 
+                            <span class="text-container">
+                            <h1> Wesley Rodrigues</h1>
+                            </span><br>
                         <h1 class="line porti-Nome">Java Developer</h1>
                         <p>Sou Desenvolvedor Java e um estudante de analise e desenvolvimento de sistemas</p>
                     </div>
@@ -88,7 +93,7 @@
                                 </div>
 
                                 <div class="name-profession">
-                                    <span class="name">conversor de moedas</span>
+                                    <span class="name">conversor de<br> moedas</span>
                                     <span class="profession">Projeto em Java</span>
                                 </div>
 
@@ -252,6 +257,38 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
+        <section class="contato">
+            <h2>Contato</h2>
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="text" id="email" class="input-padrao" required placeholder="seuemail@gmail.com">
+				
+
+				<label for="telefone">Telefone</label>
+				<input type="text" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mansagem" class="input-padrao" required></textarea>
+
+				<fieldset>
+					<p>Como preferi o nosso contato?</p>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="email" id="radio-telefone">Telefone</label>
+
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de enviar essa mensagem?</label>
+
+				<input type="submit" value="Enviar Mensagem" class="enviar">
+			</form>
+
+		
+		</section>
         
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script>

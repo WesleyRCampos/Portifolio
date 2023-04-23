@@ -60,7 +60,6 @@ header{
 main {
 	display:inline-block;
     width: 100%;
-    padding: 10% 10% 5% 10%;
        
 }
 
@@ -108,11 +107,12 @@ main{
     align-items: center;
     width: 100%;
     height: 100%;
+    padding: 10% 10% 0% 10%;
     top:0;
     background-color: black;
 }
 
-.Projeto-conversor h2{
+.Projeto-conversor h1{
     font-size: 70px;
     line-height: 1.5;
     width: 60%;
@@ -128,7 +128,7 @@ main{
 .text{
     display: block;
     width: 100%;
-    margin: 5% 0%;
+    margin: 5% 0% 0% 0%;
     text-indent: 15px;
     color: white;
     text-align: justify; 
@@ -143,11 +143,140 @@ main{
 .Projeto-conversor span{
     display: block;
     width: 100%;
-    margin: 5% 0%;
+    margin: 5% 0% 0% 0%;
     color: white;
     text-align: justify; 
     font-size: 26px;
     background-color: black;
+}
+
+.cod-Principal{
+    font-size: 70px;
+    width: 100%;
+    text-align:center;
+    color: white;
+    padding: 2% 0%;
+    
+}
+
+.projeto-cod{
+    width: 100%;
+    max-height: 600px;
+    display: flex;
+    flex-direction:row;
+    padding-right: 5%;
+    background-color:rgb(1, 1, 27);    
+    
+}
+
+.projeto-cod h3{
+    font-size: 70px;
+    line-height: 1;
+    width: 95%;
+    text-align:right;
+    margin:40px 40px 40px 0px;
+    padding: 0px 20px 15px 0px;
+    color: white;
+    background-color: rgb(116, 116, 119);
+    
+}
+.projeto-cod p{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    color: white;
+    text-align:justify; 
+    font-size: 20px;
+    padding:0px 50px 0px 40px;
+    background-color:rgb(52, 52, 52);
+}
+.projeto-int{
+    width: 100%;
+    background-color:rgb(52, 52, 52);
+    
+}
+.projeto-content{
+    width: 100%;
+    background-color:rgb(1, 1, 27);
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    padding: 0% 5% 0% 5%;
+    margin: 3% 0% 3% 0%;   
+}
+.projeto-content p{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    color: white;
+    text-align:justify; 
+    font-size: 16px;
+    padding: 1rem ;
+    overflow-x:auto;
+    scrollbar-width: thin;
+    background-color:rgb(1, 1, 39);
+    border-radius: 24px 24px 0px 0px;
+     
+}
+.identa-1 {
+    padding-left: 35px;
+    background-color:rgb(1, 1, 39);
+    color: white;
+}
+.cod-sublinhado {
+    color: rgb(62, 57, 57);
+    font-weight: 900;
+    font-style: italic;
+    background-color: rgb(83, 226, 251);
+
+}
+.variavel-funcao{
+    background-color: transparent;
+    color:rgb(249, 44, 37);
+}
+.funcao {
+    background-color: transparent;
+    color: rgb(52, 43, 226);
+}
+.import {
+    background-color: transparent;
+    color: rgb(138, 241, 154);
+  
+}
+.import-ex {
+    background-color: transparent;
+    color: rgb(243, 158, 164);
+    font-style: italic;
+}
+.variavel {
+    background-color: transparent;
+    color: yellow;
+}
+.sinais{
+    background-color: transparent;
+    color: rgb(0, 139, 104);
+}
+.variavel-tp{
+    background-color: transparent;
+    color:rgb(203, 20, 220);
+}
+.pontuacao {
+    color: aqua;
+    background-color:rgb(1, 1, 39);
+    
+}
+.projeto-content::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, rgb(143, 145, 217)  11%, rgb(52, 48, 70) 60%,rgb(23, 20, 35) 100%);
+    border: 3px solid rgb(251, 251, 251); 
+    border-radius: 100px;
+}
+.projeto-content::-webkit-scrollbar-track {
+    background-image:linear-gradient(180deg, rgb(101, 101, 101) 80deg, rgb(52, 48, 70) 0%, rgb(101, 101, 101) 90%);
+    box-shadow: inset 2px 2px 5px 0 rgb(255, 255, 255);  
+    border-radius: 100px;
+}
+.projeto-content::-webkit-scrollbar {
+    border-radius: 100px;
+    background-color:rgb(102, 102, 102);
 }
 
 
