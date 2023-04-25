@@ -10,6 +10,7 @@
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
   
 }
 
@@ -20,7 +21,7 @@
    
 }
 body{
-    height: 100vw;
+    height: 100%;
     background-color: var(--body-color);
     transition: all 0.5s all;
 }
@@ -28,6 +29,7 @@ body{
     position: fixed; 
     top: 0;
     left: 0;
+    border-right:2px solid var(--text-color);
     height: 100%;
     width: 250px;
     padding: 10px 14px;
@@ -114,6 +116,7 @@ header .image-text .header-text{
     transform: translateY(-50%) rotate(180deg);
     height: 25px;
     width: 25px;
+    border-right:2px solid var(--text-color);
     background:var(--primary-color);
     display: flex;
     align-items: center;
@@ -175,7 +178,7 @@ body.dark .sidebar li a:hover .text{
 
 .sidebar .menu-bar{
     
-    height:calc(100% - 70px);
+    height:calc(100% - 100px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -263,6 +266,7 @@ body.dark{
 .home{
     position:relative;
     background:var(--body-color);
+    width: 1024px;
     left: 250px;
     height: 100vh;
     width: calc(100% - 250px);
@@ -307,7 +311,7 @@ body.dark{
   
   .text-container h1{
     margin: 0;
-    font-size: 500%;
+    font-size: 400%;
     color: rgba(225,225,225, .01);
     background-image:url(../icons/gifs-de-anime-aesthetic-49.gif);
     background-repeat: repeat;
@@ -338,25 +342,25 @@ body.dark{
 .Nome{
     display: flex;
     width: 100%;
-    font-size: 420%;
+    font-size: 320%;
     padding-left: 45px;
     color:var(--text-color);
     font-weight:900;
-    font-family: 'VT323', monospace;
+    
 
 }
 .Intro p{
     padding-left: 50px;
-    font-size: 210%;
+    font-size: 120%;
     color: var(--text-color);
-    font-family: 'VT323', monospace;
+    
 }
 .porti-Nome{
-    font-size: 280%;
+    font-size: 200%;
     color:var(--text-color);
     overflow: hidden;
     white-space: nowrap; 
-    font-family: 'VT323', monospace;   
+      
 }
 .porti-Nome {
     animation:
@@ -380,10 +384,7 @@ body.dark{
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    background-image:url(../icons/artstation-rog-wallpaper-design.gif);
-    background-repeat: no-repeat;
-    background-position-y:center;
-    background-size: 100% ;
+    background: var(--sidebar-color);
 }
 
 .about-img img{
@@ -392,35 +393,37 @@ body.dark{
 }
 
 .heading {
-    font-size: 4.5rem;
+    font-size: 25px;
+    width: 100%;
+    padding: 5px 0px;
     text-align: center;
-    background-color: var(--body-color);
-    color: var(--text-color);
+    color: var(--text-color);;
 }
 
 .about-content {
     padding: 20px;
+    
 }
 
 .about-content h2{
-    text-align: right;
-    line-height: 1.2;
-    font-family: 'Press Start 2P', cursive;
+    text-align: justify;
+    margin: 55px 0px;
+    
 }
 .about-content span{
     color: aqua;
 }
 .about-content h3{
-    font-size: 2rem;
+    font-size: 20px;
     text-align: justify;
-    color: white;
+    color: var(--primary-color);
 }
 .about-content p{
-    font-size: 1.6rem;
+    font-size: 20px;
     margin: 2rem 0 3rem;
     text-align: justify;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+   
 }
 .about-content a{
     display: inline-block;
@@ -432,8 +435,8 @@ body.dark{
     letter-spacing: .1rem;
     font-weight: 600;
     text-decoration: none;
-    font-size: 1.6rem;
-    font-family: 'VT323', monospace;
+    font-size: 15px;
+    
 }
 
 .about a:hover{
@@ -447,24 +450,15 @@ body.dark{
     align-items: center;
     height: 100%;
     padding-top:5%;
-    background-image:url(../icons/virtuaverse-cyberpunk-and-pixels-cool-pixel-art-desktop-wallpaper-art-pixel-art.gif);
-    background-repeat: no-repeat;
-    background-position-y:center;
-    background-size: 100% ;
+    background: var(--body-color);
 }
 
 .project-port h2{
-    font-size: 70px;
-    line-height: 1.5;
-    width: 57%;
-    text-align: right;
+    font-size: 25px;
+    width: 100%;
+    padding: 5px 0px;
+    text-align: center;
     color: var(--text-color);
-    background-color:var(--body-color);
-    display: block;
-    margin-left: 20px;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Press Start 2P', cursive;
    
 }
 
@@ -475,8 +469,6 @@ body.dark{
     text-align: center;
     padding: 5% 10%;
     font-size: 26px;
-    font-family: 'Poppins', sans-serif;
-    
 }
 
 .project{
@@ -488,9 +480,8 @@ body.dark{
    
 }
 .swiper {
-    width: 1002px;
-   
-      
+    width: 1024px;
+
 }
 
 .card .image {
@@ -512,8 +503,8 @@ body.dark{
 
 .card {
     position: relative;
-    background:var(--body-color);
-    border: 6px solid var(--body-color);
+    background:var(--sidebar-color);
+    border: 6px solid var(--text-color);
     border-radius: 22px;
 }
 
@@ -574,14 +565,12 @@ body.dark{
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Press Start 2P', cursive;
 }
 
 .name-profession .profession {
-    font-size: 25px;
+    font-size: 17px;
     font-weight: 500;
     margin-top: 8px;
-    font-family: 'VT323', monospace;
 }
 
 .card .rating{
@@ -611,10 +600,9 @@ body.dark{
     font-weight: 600;
     padding: 8px 15px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     transition: .3s;
-    font-family: 'VT323', monospace;
 }
 
 .card .button button:hover{
@@ -631,7 +619,7 @@ body.dark{
 .swiper-button-next,
 .swiper-button-prev {
 
-    color: var(--sidebar-color);
+    color: var(--text-color);
 }
 
 @keyframes porti-Nome{
@@ -665,49 +653,35 @@ body.dark{
     transition: 0.3s ease-in-out;
 }
 .Botoes a:hover{
-    font-size: 80%;
+    font-size: 60%;
     margin-right: 45px;
     color:var(--body-color) ;
 }
 .contato{
     display:block;
     justify-content: center;
-    width: 100%;
-    background-image:url(../icons/Dump-Background-GIF-Find-Share-on-GIPHY.gif);
-    background-repeat: no-repeat;
-    background-position-y:center;
-    background-size: 100% ;
-    
+    width: 100%; 
+    padding: 40px 20px;
+    border-top:2px solid var(--text-color);
+    background: var(--body-color);
 }
 .contato h2{
-    font-size: 70px;
-    line-height: 1.5;
-    width: 57%;
-    text-align: right;
+    font-size: 25px;
+    width: 1024px;
+    padding: 5px 0px;
+    text-align: center;
     color: var(--text-color);
-    background-color:var(--body-color);
-    display: block;
-    margin-left: 20px;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Press Start 2P', cursive;
-   
-}
-form {
-    padding: 40px 20px;
 }
 
 form label, form p {
     display: block;
     align-items: center;
-    font-size: 25px;
-    color: var(--text-color);
-    font-family: 'VT323', monospace;
-    
+    font-size: 15px;
+    color: var(--text-color); 
 }
 
 fieldset{
-    width: 80%;
+    width: 1024px;
     padding: 10px;
     border: 6px solid var(--primary-color);
     border-radius: 8px;
@@ -717,15 +691,15 @@ fieldset{
     display: block;
     margin: 0 0 20px;
     color: var(--text-color);
-    padding: 10px 25px;
-    width: 80%;
+    padding: 10px 0px;
+    width: 1024px;
     border: 6px solid var(--primary-color);
     border-radius: 8px;
     background-color: var(--body-color);
     
 }
 textarea {
-    width: 80%;
+    width: 100%;
     height: 30px;
 }
 .checkbox {
@@ -733,8 +707,8 @@ textarea {
 }
 
 .enviar {
-	width: 40%;
-	padding: 15px 0;
+	width: 20%;
+	padding: 10px 0;
 	background: var(--primary-color-light);
 	color: var(--text-color);
 	font-weight: bold;
@@ -763,18 +737,15 @@ textarea {
 }
 
 footer {
-    
 	text-align: center;
-	background: rgb(12,0,10);
-    background-image:url(../icons/gifs-de-anime-aesthetic-49.gif);
-    background-position-y:center;
-    background-position-x:right;
+	background:var(--body-color);
 	padding: 10px 0;
 }
+
 footer img{
 	width: 90px;
 	border-radius: 8%;
-	background-color:var(--body-color);
+	background-color:var(--primary-color);
 }
 
 footer p{
@@ -782,10 +753,10 @@ footer p{
 }
 
 .copyright {
-	color: var(--primary-color-light);
-	font-size: 23px;
+	color: var(--text-color);
+	font-size: 12px;
 	margin: 20px 0 0;
-    font-family: 'VT323', monospace;
+   
 }
 
 @media only screen and (max-width: 950px) {
