@@ -19,6 +19,11 @@
     align-items: center;
    
 }
+body{
+    height: 100vw;
+    background-color: var(--body-color);
+    transition: all 0.5s all;
+}
 .sidebar {
     position: fixed; 
     top: 0;
@@ -27,8 +32,8 @@
     width: 250px;
     padding: 10px 14px;
     background: var(--sidebar-color);
-    transition: ease-in-out 1s all;
-    
+    transition: all 0.5s ease;
+    z-index: 100;
 }
 
 .sidebar.close .text{
@@ -39,13 +44,19 @@
     font-size: 16px;
     font-weight: 600;
     color: var(--text-color);
-    transition: ease-in 3s all;
+    transition: all 0.4s ease;
     white-space: nowrap;
     opacity: 1;
 }
 
 .sidebar.close {
     width: 88px;
+}
+.sidebar .image{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar li {
@@ -66,7 +77,7 @@
 .sidebar li .icon,
 .sidebar li .text{
     color: var(--text-color);
-    transition:ease-in-out 2ms all;
+    transition: all 0.2s ease;
 }
 
 .sidebar header {
@@ -110,19 +121,23 @@ header .image-text .header-text{
     border-radius: 50%;
     color: var(--sidebar-color);
     font-size: 12px;
-    transition: ease-in-out 2ms all;
+    transition: all 0.3s ease;
 }
 .sidebar.close header .toggle{
     transform: translateY(-50%);
 }
 body.dark .sidebar header .toggle{
-    transform: rotate(180deg);
     color: var(--text-color);
+}
+
+.sidebar .menu{
+    margin-top: 35px;
 }
 
 .sidebar .search-box{
     background-color: var(--primary-color-light);
     border-radius: 6px;
+    transition: all 0.5s ease;
 }
 .search-box input {
     height: 100%;
@@ -130,7 +145,11 @@ body.dark .sidebar header .toggle{
     outline: none;
     border: none;
     border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
     background-color: var(--primary-color-light);
+    transition: all 0.5s ease;
+    color: var(--text-color);
 }
 
 .sidebar li a{
@@ -140,7 +159,7 @@ body.dark .sidebar header .toggle{
     align-items: center;
     text-decoration: none;
     border-radius: 6px;
-    transition:ease-in-out 4ms all;
+    transition:all 0.4s all;
 }
 .sidebar li a:hover{
     background: var(--primary-color);
@@ -156,7 +175,7 @@ body.dark .sidebar li a:hover .text{
 
 .sidebar .menu-bar{
     
-    height:calc(100% - 50px);
+    height:calc(100% - 70px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -176,10 +195,19 @@ body.dark .sidebar li a:hover .text{
 }
 .menu-bar .mode i{
     position: absolute;
+    transition:ease-in-out 04ms all;
 }
 
 .menu-bar .mode i.sun{
     opacity: 0;
+}
+
+body.dark .menu-bar .mode i.sun{
+    opacity: 1;
+}
+
+body.dark .menu-bar .mode i.moon{
+    opacity: 1;
 }
 
 .menu-bar .mode .toggle-switch{
@@ -191,6 +219,9 @@ body.dark .sidebar li a:hover .text{
     height: 100%;
     min-width: 60px;
     cursor: pointer;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+    transition: all 0.5s ease;
     
 }
 
@@ -200,6 +231,7 @@ body.dark .sidebar li a:hover .text{
     width: 44px;
     border-radius: 25px;
     background:var(--toggle-color);
+    transition: all 0.5s ease;
 }
 .switch::before{
     content: "";
@@ -212,13 +244,9 @@ body.dark .sidebar li a:hover .text{
     transform: translateY(50%);
     background:var(--primary-color-light);
     cursor: pointer;
-    transition:ease-in-out 3ms all;
+    transition:all 0.3s all;
 }
 
-body{
-    background:var(--body-color);
-    padding-left: 88px;
-}
 
 body.dark .switch::before{
     left: 25px;
@@ -230,6 +258,20 @@ body.dark{
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
     --text-color: #ccc;
+}
+
+.home{
+    position:relative;
+    background:var(--body-color);
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    transition:all 05s all;
+}
+
+.sidebar.close ~ .home{
+    left: 88px;
+    width: calc(100% - 88px);
 }
 
 .Conteudo{
@@ -265,7 +307,7 @@ body.dark{
   
   .text-container h1{
     margin: 0;
-    font-size: 100px;
+    font-size: 500%;
     color: rgba(225,225,225, .01);
     background-image:url(../icons/gifs-de-anime-aesthetic-49.gif);
     background-repeat: repeat;
@@ -296,7 +338,7 @@ body.dark{
 .Nome{
     display: flex;
     width: 100%;
-    font-size: 86px;
+    font-size: 420%;
     padding-left: 45px;
     color:var(--text-color);
     font-weight:900;
@@ -305,12 +347,12 @@ body.dark{
 }
 .Intro p{
     padding-left: 50px;
-    font-size: 36px;
+    font-size: 210%;
     color: var(--text-color);
     font-family: 'VT323', monospace;
 }
 .porti-Nome{
-    font-size: 45px;
+    font-size: 280%;
     color:var(--text-color);
     overflow: hidden;
     white-space: nowrap; 
@@ -330,7 +372,6 @@ body.dark{
 
 .wesleyImg img{
     width: 100%;
-    image-rendering: pixelated;
     
 }
 
@@ -384,8 +425,8 @@ body.dark{
 .about-content a{
     display: inline-block;
     margin-left: 80%;
-    background-color: rgb(65, 13, 92);
-    color: white;
+    background-color: var(--body-color);
+    color: var(--text-color);
     border-radius: 5px;
     padding: 1.2rem 2.8rem;
     letter-spacing: .1rem;
@@ -396,7 +437,8 @@ body.dark{
 }
 
 .about a:hover{
-    background: black;
+    background: var(--primary-color);
+    color: var(--body-color);
     
 }
 
@@ -429,7 +471,7 @@ body.dark{
 .project-port p{
     display: block;
     width: 100%;
-    color: white;
+    color: var(--text-color);
     text-align: center;
     padding: 5% 10%;
     font-size: 26px;
@@ -442,12 +484,12 @@ body.dark{
     justify-content: center;
     align-items: center;
     height: 500px;
-    margin: 0% 0% 0% 10%;
+    margin: 0% 5%;
    
 }
 .swiper {
-    width: 1024px;
-    margin: 0% 10%;
+    width: 1002px;
+   
       
 }
 
@@ -462,17 +504,17 @@ body.dark{
     object-fit: cover;
     border-radius: 50%;
     background-color: rgb(58, 8, 66);
-    border: 5px solid rgb(141, 7, 112);
+    border: 5px solid var(--body-color);
 }
 .card .image img:nth-of-type(1n){
-    background-color: rgb(43, 33, 90);
+    background-color: var(--primary-color);
 }
 
 .card {
     position: relative;
-    background:transparent;
-    border: 6px solid rgb(65, 13, 92);
-    border-radius: 20px;
+    background:var(--body-color);
+    border: 6px solid var(--body-color);
+    border-radius: 22px;
 }
 
 .card::before{
@@ -481,7 +523,7 @@ body.dark{
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    background-color: rgb(122, 3, 181);
+    background-color:var(--primary-color);
     clip-path: circle(55% at 0 0);
     border-top-right-radius: 10px;
 }
@@ -505,24 +547,24 @@ body.dark{
 }
 
 .card .social-media i{
-    color: white;
+    color: var(--text-color);
     margin-top: 10px;
     cursor: pointer;
     transition: .3s;
 }
 
 .card .social-media i:hover{
-    color: rgb(65, 13, 92);
+    color: var(--primary-color);
 }
 .card .social-media i::selection{
-    color: rgb(65, 13, 92);
+    color: var(--primary-color);
 }
 .card .name-profession{
     display:flex;
     align-items: center;
     flex-direction: column;
     margin: 10px;
-    color: white; 
+    color: var(--text-color); 
        
 }
 
@@ -550,7 +592,7 @@ body.dark{
 
 .card .rating i{
     font-size: 18px;
-    color: rgb(65, 13, 92);
+    color: var(--primary-color);
     margin: 0 2px;
 }
 
@@ -562,10 +604,10 @@ body.dark{
 }
 
 .card .button button {
-    background: rgb(65, 13, 92);
+    background: var(--primary-color);
     border: none;
     outline: none;
-    color:white;
+    color:var(--body-color);
     font-weight: 600;
     padding: 8px 15px;
     border-radius: 5px;
@@ -576,19 +618,20 @@ body.dark{
 }
 
 .card .button button:hover{
-    background-color: black;
+    background-color: var(--sidebar-color);
+    color:var(--text-color);
 }
 
 .swiper-pagination-bullet {
     height: 7px;
     width: 26px;
-    background-color: rgb(65, 13, 92);
+    background-color: var(--sidebar-color);
     border-radius: 26px;
 }
 .swiper-button-next,
 .swiper-button-prev {
 
-    color: rgb(65, 13, 92);
+    color: var(--sidebar-color);
 }
 
 @keyframes porti-Nome{
@@ -601,7 +644,7 @@ body.dark{
 }
 @keyframes cursor {
     from {
-        border-right-color: black;
+        border-right-color: var(--text-color);
     }
     to {
         border-right-color: transparent;
@@ -614,7 +657,7 @@ body.dark{
     font-size: 100%;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color:var(--text-color);
     border-radius: 12px;
     border: none;
     padding: 10px 40px 10px 40px;
@@ -624,7 +667,7 @@ body.dark{
 .Botoes a:hover{
     font-size: 80%;
     margin-right: 45px;
-    color:white ;
+    color:var(--body-color) ;
 }
 .contato{
     display:block;
@@ -657,27 +700,28 @@ form {
 form label, form p {
     display: block;
     align-items: center;
-    font-size: 20px;
-    color: white;
+    font-size: 25px;
+    color: var(--text-color);
+    font-family: 'VT323', monospace;
     
 }
 
 fieldset{
     width: 80%;
     padding: 10px;
-    border: 6px solid rgb(65, 13, 92);
+    border: 6px solid var(--primary-color);
     border-radius: 8px;
 }
 
 .input-padrao {
     display: block;
     margin: 0 0 20px;
-    color: white;
+    color: var(--text-color);
     padding: 10px 25px;
     width: 80%;
-    border: 6px solid rgb(65, 13, 92);
+    border: 6px solid var(--primary-color);
     border-radius: 8px;
-    background-color: rgb(14, 14, 34);
+    background-color: var(--body-color);
     
 }
 textarea {
@@ -691,8 +735,8 @@ textarea {
 .enviar {
 	width: 40%;
 	padding: 15px 0;
-	background: rgb(65, 13, 92);
-	color: black;
+	background: var(--primary-color-light);
+	color: var(--text-color);
 	font-weight: bold;
 	font-size: 18px;
 	border: none;
@@ -702,7 +746,8 @@ textarea {
 }
 
 .enviar:hover {
-	background: white;
+    color: var(--body-color);
+	background: var(--primary-color);
 	transform: scale(1.2);
 }
 
@@ -718,6 +763,7 @@ textarea {
 }
 
 footer {
+    
 	text-align: center;
 	background: rgb(12,0,10);
     background-image:url(../icons/gifs-de-anime-aesthetic-49.gif);
@@ -728,7 +774,7 @@ footer {
 footer img{
 	width: 90px;
 	border-radius: 8%;
-	background-color:rgb(27, 5, 39);
+	background-color:var(--body-color);
 }
 
 footer p{
@@ -736,7 +782,7 @@ footer p{
 }
 
 .copyright {
-	color: #FFFFFF;
+	color: var(--primary-color-light);
 	font-size: 23px;
 	margin: 20px 0 0;
     font-family: 'VT323', monospace;

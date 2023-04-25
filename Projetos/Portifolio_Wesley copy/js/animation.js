@@ -6,9 +6,18 @@ const body = document.querySelector("body"),
         modeText = body.querySelector(".mode-text");
 
         toggle.addEventListener("click", () =>{
-           sidebar.classList.toggle("close") 
+           sidebar.classList.toggle("close"); 
+        });
+        searchBtn.addEventListener("click", () =>{
+           sidebar.classList.remove("close"); 
         });
 
         modeSwtich.addEventListener("click", () =>{
-           body.classList.toggle("dark") 
+           body.classList.toggle("dark");
+           
+           if(body.classList.contains("dark")){
+            modeText.innerText = "Light Mode"
+        }else{
+            modeText.innerText = "Dark Mode"
+        }
         });

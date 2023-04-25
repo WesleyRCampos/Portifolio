@@ -14,142 +14,201 @@
     <link rel="stylesheet" href="css/style-conversor.css" />
   </head>
   <body>
-    <header id="header">
-      <nav class="nav" id="nav">
-        <ul id="menu1">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Skill</a></li>
-        </ul>
-        <ul id="menu">
-          <li><a href="#">Pesquisar</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Menu</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="sidebar close">
+      <header>
+          <div class="image-text">
+              <span class="image">
+                  <img src="./icons/Foto1[1].png" alt="logo">
+              </span>
 
-    <main>
-      <div class="rota">
-        <i class="fa-solid fa-house-chimney"></i>
-        <p class="caminho">
-          ./Potifolio ./Developer Wesley ./Conversor de Moedas
-        </p>
+              <div class="text header-text">
+                  <span class="name">Portifolio</span>
+                  <span class="profession">Analista de Sistemas</span>
+              </div>
+          </div>
+
+          <i class="fa-solid fa-chevron-right toggle"></i>
+
+      </header>
+      <div class="menu-bar">
+          <div class="menu">
+              <li class="search-box">
+                  <i class="fa-solid fa-search fa-fade icon"></i>
+                  <input type="text" placeholder="Pesquisar....">
+              </li>
+              <ul class="menu-links">
+                  <li class="nav-link">
+                      <a href="#">
+                          <i class="fa-solid fa-house fa-fade icon"></i>
+                          <span class="text nav-text">Inicio</span>
+                      </a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#">
+                          <i class="fa-solid fa-house fa-fade icon"></i>
+                          <span class="text nav-text">Sobre</span>
+                      </a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#">
+                          <i class="fa-solid fa-house fa-fade icon"></i>
+                          <span class="text nav-text">Serviços</span>
+                      </a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#">
+                          <i class="fa-solid fa-house fa-fade icon"></i>
+                          <span class="text nav-text">Epecialidades</span>
+                      </a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#">
+                          <i class="fa-solid fa-house fa-fade icon"></i>
+                          <span class="text nav-text">Projetos</span>
+                      </a>
+                  </li>
+                  <li class="nav-link">
+                      <a href="#">
+                          <i class="fa-solid fa-house fa-fade icon"></i>
+                          <span class="text nav-text">Contato</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+              <li class="mode">
+                  <div class="moon-sun">
+                      <i class="fa-solid fa-moon fa-fade icon moon"></i>
+                      <i class="fa-solid fa-sun fa-fade icon sun"></i>
+                  </div>
+                  <span class="mode-text text">Dark Mode</span>
+                  <div class="toggle-switch">
+                      <span class="switch">
+
+                      </span>
+                  </div>
+              </li>
+          </div>
       </div>
-      <div class="Projeto-conversor">
-        <h1>Projeto Conversor de Moedas</h1>
-        <p class="text">
-          nesta oportunidade foi solicitado para nós Devs a criação de um
-          conversor de moeda utilizando a linguagem Java. As características
-          solicitadas por nosso cliente são as seguintes:
-          <br /><br />O conversor de moeda deverá:<br /><br />
-          - Converter de Reais a Dólar<br />
-          - Converter de Reais a Euro<br />
-          - Converter de Reais a Libras Esterlinas<br />
-          - Converter de Reais a Peso argentino<br />
-          - Converter de Reais a Peso Chileno<br /><br />
-          Lembrando que deve ser possível também converter de forma inversa ou
-          seja:
-        </p>
-        <span>
-          - Converter de Dólar a Reais<br />
-          - Converter de Euro a Reais<br />
-          - Converter de Libras Esterlinas a Reais<br />
-          - Converter de Peso argentino a Reais<br />
-          - Converter de Peso Chileno a Reais<br />
-        </span>
-		</div>
+  </nav>
+  <section class="home">
+      <main>
+        
+        <div class="Projeto-conversor">
+          <h1>Projeto Conversor de Moedas</h1>
+          <p class="text">
+            nesta oportunidade foi solicitado para nós Devs a criação de um
+            conversor de moeda utilizando a linguagem Java. As características
+            solicitadas por nosso cliente são as seguintes:
+            <br /><br />O conversor de moeda deverá:<br /><br />
+            - Converter de Reais a Dólar<br />
+            - Converter de Reais a Euro<br />
+            - Converter de Reais a Libras Esterlinas<br />
+            - Converter de Reais a Peso argentino<br />
+            - Converter de Reais a Peso Chileno<br /><br />
+            Lembrando que deve ser possível também converter de forma inversa ou
+            seja:
+          </p>
+          <span>
+            - Converter de Dólar a Reais<br />
+            - Converter de Euro a Reais<br />
+            - Converter de Libras Esterlinas a Reais<br />
+            - Converter de Peso argentino a Reais<br />
+            - Converter de Peso Chileno a Reais<br />
+          </span>
+      </div>
 
-		  <h2 class="cod-Principal">Estrutura</h2>
-        <section class="projeto-cod">
-          <div class="projeto-int">
-            <h3>Caixa de<br> Diálogo</h3>
-            <p>
-              Esta caixa de diálogo deve permitir que o usuário escolha entre as
-              opções de conversão. na seção de Anexos podemos ver um exemplo de
-              menú que inclui outras opções de conversão além da conversão de
-              Moedas, assim você pode implementar outras funções dentro da mesma
-              aplicação. Utilizar a classe <span class="cod-sublinhado">da biblioteca
-              Javax.swing</span>; Utilizar o método <span class="cod-sublinhado">showInputDialog</span> como objeto para
-              apresentar mais de uma opção;
-            </p>
-          </div>
-          <div class="projeto-content">
-            <p>
-             <span class="cod-sublinhado">import javax.swing.JOptionPane;</span><br>
-             <span class="variavel-tp">private double</span> <span class="variavel">moeda</span> <span class="pontuacao">;</span><br>
-             <span class="variavel-tp">private String</span> <span class="pontuacao"> [ ]</span> <span class="variavel">tipo</span> <span class="pontuacao">= {<div class="identa-1"> <span class="pontuacao">"</span> Selecione<span class="pontuacao">", " </span>Real<span class="pontuacao"> ></span> Dólar<span class="pontuacao">", "</span> Real<span class="pontuacao"> > </span>Euro<span class="pontuacao">", "</span>Real<span class="pontuacao"> > </span>Libras Esterlinas<span class="pontuacao">",</span><br>
-            
-             <span class="variavel-tp">public class</span> <span class="import">Conversor</span> <span class="pontuacao"> { <div class="identa-1"></span>
+        <h2 class="cod-Principal">Estrutura</h2>
+          <section class="projeto-cod">
+            <div class="projeto-int">
+              <h3>Caixa de<br> Diálogo</h3>
+              <p>
+                Esta caixa de diálogo deve permitir que o usuário escolha entre as
+                opções de conversão. na seção de Anexos podemos ver um exemplo de
+                menú que inclui outras opções de conversão além da conversão de
+                Moedas, assim você pode implementar outras funções dentro da mesma
+                aplicação. Utilizar a classe <span class="cod-sublinhado">da biblioteca
+                Javax.swing</span>; Utilizar o método <span class="cod-sublinhado">showInputDialog</span> como objeto para
+                apresentar mais de uma opção;
+              </p>
+            </div>
+            <div class="projeto-content">
+              <p>
+              <span class="cod-sublinhado">import javax.swing.JOptionPane;</span><br>
+              <span class="variavel-tp">private double</span> <span class="variavel">moeda</span> <span class="pontuacao">;</span><br>
+              <span class="variavel-tp">private String</span> <span class="pontuacao"> [ ]</span> <span class="variavel">tipo</span> <span class="pontuacao">= {<div class="identa-1"> <span class="pontuacao">"</span> Selecione<span class="pontuacao">", " </span>Real<span class="pontuacao"> ></span> Dólar<span class="pontuacao">", "</span> Real<span class="pontuacao"> > </span>Euro<span class="pontuacao">", "</span>Real<span class="pontuacao"> > </span>Libras Esterlinas<span class="pontuacao">",</span><br>
+              
+              <span class="variavel-tp">public class</span> <span class="import">Conversor</span> <span class="pontuacao"> { <div class="identa-1"></span>
 
-              <span class="pontuacao">"</span>Real <span class="pontuacao">></span> Libras Esterlinas<span class="pontuacao">", "</span>Real<span class="pontuacao"> ></span> Peso Chileno<span class="pontuacao">", "</span>Dólar <span class="pontuacao">></span> Real<span class="pontuacao">", "</span>Euro<span class="pontuacao">></span> Real <span class="pontuacao">",</span><br>
-              <span class="pontuacao">"</span>Libras Esterlinas <span class="pontuacao">></span> Real<span class="pontuacao">", "</span>Peso argentino <span class="pontuacao">></span> Real<span class="pontuacao">", "</span>Peso Chileno <span class="pontuacao">></span> Real<span class="pontuacao">" };</span><br><br>
+                <span class="pontuacao">"</span>Real <span class="pontuacao">></span> Libras Esterlinas<span class="pontuacao">", "</span>Real<span class="pontuacao"> ></span> Peso Chileno<span class="pontuacao">", "</span>Dólar <span class="pontuacao">></span> Real<span class="pontuacao">", "</span>Euro<span class="pontuacao">></span> Real <span class="pontuacao">",</span><br>
+                <span class="pontuacao">"</span>Libras Esterlinas <span class="pontuacao">></span> Real<span class="pontuacao">", "</span>Peso argentino <span class="pontuacao">></span> Real<span class="pontuacao">", "</span>Peso Chileno <span class="pontuacao">></span> Real<span class="pontuacao">" };</span><br><br>
 
-              <span class="variavel-tp">public void</span> <span class="funcao">MostrarCotacao</span><span class="pontuacao">() {</span> <br><div class="identa-1">
-              <span class="variavel-tp">String</span> <span class="variavel">pergunta</span> <span class="pontuacao">= (</span> <span class="variavel-tp">String</span> <span class="pontuacao">)</span> <span class="cod-sublinhado">JOptionPane.showInputDialog(null, "Qual moeda você quer converter?", "moeda",</span><br>
-              <span class="cod-sublinhado">JOptionPane.PLAIN_MESSAGE, null, tipo, "0");</span><br><br>
+                <span class="variavel-tp">public void</span> <span class="funcao">MostrarCotacao</span><span class="pontuacao">() {</span> <br><div class="identa-1">
+                <span class="variavel-tp">String</span> <span class="variavel">pergunta</span> <span class="pontuacao">= (</span> <span class="variavel-tp">String</span> <span class="pontuacao">)</span> <span class="cod-sublinhado">JOptionPane.showInputDialog(null, "Qual moeda você quer converter?", "moeda",</span><br>
+                <span class="cod-sublinhado">JOptionPane.PLAIN_MESSAGE, null, tipo, "0");</span><br><br>
 
-              <span class="variavel">moeda</span><span class="pontuacao"> = </span>0<span class="pontuacao">;</span><br>
-              <span class="variavel-tp"><span class="variavel-tp">try</span></span> <span class="pontuacao">{</span><br>
-              <span class="variavel">moeda</span> <span class="pontuacao">=</span> <span class="import">Double</span>.<span class="import-ex">parseDouble</span> <span class="cod-sublinhado">(JOptionPane.showInputDialog(null, "Insira o valor:"));</span><br>
-              <span class="pontuacao">}</span> <span class="variavel-tp">catch</span> <span class="pontuacao">(</span><span class="import">NumberFormatException</span> <span class="variavel-tp">e1</span></span><span class="pontuacao">) {</span><br>
-              <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "Inserir somente valores númericos");</span><br>
-              <span class="pontuacao">}</span><br><br>
+                <span class="variavel">moeda</span><span class="pontuacao"> = </span>0<span class="pontuacao">;</span><br>
+                <span class="variavel-tp"><span class="variavel-tp">try</span></span> <span class="pontuacao">{</span><br>
+                <span class="variavel">moeda</span> <span class="pontuacao">=</span> <span class="import">Double</span>.<span class="import-ex">parseDouble</span> <span class="cod-sublinhado">(JOptionPane.showInputDialog(null, "Insira o valor:"));</span><br>
+                <span class="pontuacao">}</span> <span class="variavel-tp">catch</span> <span class="pontuacao">(</span><span class="import">NumberFormatException</span> <span class="variavel-tp">e1</span></span><span class="pontuacao">) {</span><br>
+                <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "Inserir somente valores númericos");</span><br>
+                <span class="pontuacao">}</span><br><br>
 
-              <span class="variavel-tp">double</span> <span class="variavel">calculo</span> <span class="pontuacao">=</span> 0<span class="pontuacao">;</span><br>
-              <span class="variavel-tp">if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span> Real <span class="pontuacao">></span> Dólar<span class="pontuacao">") { </span><br>
-                <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> moeda <span class="sinais">*</span> 5.24<span class="pontuacao">;</span><br>
-              <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " US$");</span><br><br>
+                <span class="variavel-tp">double</span> <span class="variavel">calculo</span> <span class="pontuacao">=</span> 0<span class="pontuacao">;</span><br>
+                <span class="variavel-tp">if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span> Real <span class="pontuacao">></span> Dólar<span class="pontuacao">") { </span><br>
+                  <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> moeda <span class="sinais">*</span> 5.24<span class="pontuacao">;</span><br>
+                <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " US$");</span><br><br>
 
-              <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">==  "</span>Real <span class="pontuacao">></span> Euro<span class="pontuacao">") { </span><br>
-                <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> moeda <span class="sinais">*</span> 5.61<span class="pontuacao">;</span><br>
-              <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " €");</span><br><br>
+                <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">==  "</span>Real <span class="pontuacao">></span> Euro<span class="pontuacao">") { </span><br>
+                  <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> moeda <span class="sinais">*</span> 5.61<span class="pontuacao">;</span><br>
+                <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " €");</span><br><br>
 
-              <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao"></span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Real <span class="pontuacao">></span> Libras Esterlinas<span class="pontuacao">") { </span><br>
-                <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> moeda <span class="sinais">*</span> 6.43<span class="pontuacao">;</span><br>
-              <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " $");</span><br><br>
+                <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao"></span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Real <span class="pontuacao">></span> Libras Esterlinas<span class="pontuacao">") { </span><br>
+                  <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> moeda <span class="sinais">*</span> 6.43<span class="pontuacao">;</span><br>
+                <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " $");</span><br><br>
 
-              <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Real <span class="pontuacao">></span> Libras Esterlinas<span class="pontuacao">") { </span> <br>
-                <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> moeda <span class="sinais">*</span> 0.26<span class="pontuacao">;</span><br>
-              <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " £");</span><br><br>
+                <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Real <span class="pontuacao">></span> Libras Esterlinas<span class="pontuacao">") { </span> <br>
+                  <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> moeda <span class="sinais">*</span> 0.26<span class="pontuacao">;</span><br>
+                <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " £");</span><br><br>
 
-              <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Real <span class="pontuacao">></span> Peso Chileno<span class="pontuacao">") { </span><br>
-                <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> moeda <span class="sinais">*</span> 0.63<span class="pontuacao">;</span><br>
-              <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " CLP$");</span><br><br>
+                <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Real <span class="pontuacao">></span> Peso Chileno<span class="pontuacao">") { </span><br>
+                  <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> moeda <span class="sinais">*</span> 0.63<span class="pontuacao">;</span><br>
+                <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " CLP$");</span><br><br>
 
-              <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Dólar <span class="pontuacao">></span> Real<span class="pontuacao">") { </span><br>
-                <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> <span class="import">Math</span>.<span class="import-ex">round </span><span class="pontuacao">(</span>moeda <span class="sinais">/</span> 5.61<span class="pontuacao">);</span><br>
-              <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " R$");</span><br><br>
+                <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Dólar <span class="pontuacao">></span> Real<span class="pontuacao">") { </span><br>
+                  <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> <span class="import">Math</span>.<span class="import-ex">round </span><span class="pontuacao">(</span>moeda <span class="sinais">/</span> 5.61<span class="pontuacao">);</span><br>
+                <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " R$");</span><br><br>
 
-              <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Euro <span class="pontuacao">></span> Real<span class="pontuacao">") { </span><br>
-                <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> <span class="import">Math</span>.<span class="import-ex">round </span><span class="pontuacao">(</span>moeda <span class="sinais">/</span> 5.61<span class="pontuacao">);</span><br>
-              <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " R$");</span><br><br>
+                <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Euro <span class="pontuacao">></span> Real<span class="pontuacao">") { </span><br>
+                  <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> <span class="import">Math</span>.<span class="import-ex">round </span><span class="pontuacao">(</span>moeda <span class="sinais">/</span> 5.61<span class="pontuacao">);</span><br>
+                <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " R$");</span><br><br>
 
-              <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Libras Esterlinas <span class="pontuacao">></span> Real<span class="pontuacao">") { </span><br>
-                <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> <span class="import">Math</span>.<span class="import-ex">round </span><span class="pontuacao">(</span>moeda <span class="sinais">/</span> 0.26<span class="pontuacao">);</span><br>
-              <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " R$");</span><br><br>
+                <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span> <span class="pontuacao">== "</span>Libras Esterlinas <span class="pontuacao">></span> Real<span class="pontuacao">") { </span><br>
+                  <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> <span class="import">Math</span>.<span class="import-ex">round </span><span class="pontuacao">(</span>moeda <span class="sinais">/</span> 0.26<span class="pontuacao">);</span><br>
+                <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " R$");</span><br><br>
 
-              <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span><span class="pontuacao"> == "</span>Peso Chileno <span class="pontuacao">></span> Real<span class="pontuacao">") {</span><br>
-                <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> <span class="import">Math</span>.<span class="import-ex">round </span><span class="pontuacao">(</span>moeda <span class="sinais">/</span> 0.63<span class="pontuacao">);</span><br>
-              <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " R$");</span><br><br>
+                <span class="pontuacao">}</span> <span class="variavel-tp">else if</span> <span class="pontuacao">(</span><span class="variavel-funcao">pergunta</span><span class="pontuacao"> == "</span>Peso Chileno <span class="pontuacao">></span> Real<span class="pontuacao">") {</span><br>
+                  <span class="variavel-funcao">calculo</span> <span class="pontuacao">=</span> <span class="import">Math</span>.<span class="import-ex">round </span><span class="pontuacao">(</span>moeda <span class="sinais">/</span> 0.63<span class="pontuacao">);</span><br>
+                <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "O valor convertido fica em " + calculo + " R$");</span><br><br>
 
-              <span class="pontuacao">}</span> <span class="variavel-tp">else</span><span class="pontuacao"> { </span>
-              <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "Opção Inválida", null, 0);</span><br><br>
+                <span class="pontuacao">}</span> <span class="variavel-tp">else</span><span class="pontuacao"> { </span>
+                <span class="cod-sublinhado">JOptionPane.showMessageDialog(null, "Opção Inválida", null, 0);</span><br><br>
 
-              <span class="pontuacao">}</span><br></div>
-              <span class="pontuacao">}</span></div>
-              <span class="pontuacao">};</span>
-            </p>
-          </div>
-        </section>
-    </main>
+                <span class="pontuacao">}</span><br></div>
+                <span class="pontuacao">}</span></div>
+                <span class="pontuacao">};</span>
+              </p>
+            </div>
+          </section>
+          <script src="./js/animation.js"></script>
+      </main>
 
-    <footer>
-      <img
-        src="./icons/chrome_image_2_de_abr._de_2023_16_06_31_BRT[1].png"
-        alt="Foto do Wesley"
-      />
-      <p class="copyright">&copy; Copyright Wesley Rodrigues - 2023</p>
-    </footer>
+      <footer>
+        <img
+          src="./icons/chrome_image_2_de_abr._de_2023_16_06_31_BRT[1].png"
+          alt="Foto do Wesley"
+        />
+        <p class="copyright">&copy; Copyright Wesley Rodrigues - 2023</p>
+      </footer>
+  </section>
   </body>
 </html>

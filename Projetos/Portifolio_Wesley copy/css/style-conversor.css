@@ -1,107 +1,277 @@
+:root{
+    --body-color:#e4e9f7;
+    --sidebar-color:#fff;
+    --primary-color:#695cfe;
+    --primary-color-light:#f6f5ff;
+    --toggle-color:#ddd;
+    --text-color:#707070;
+}
 *{
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
-    background-color:rgb(14, 14, 34);
+  
 }
 
-header{
-    display:block;
-    position: fixed;
-    width: 100%;
-    display: block;
+.sidebar .image{
+    min-width: 60px;
+    display: flex;
     align-items: center;
-	top: 0;
-    
+   
+}
+body{
+    height: 100vw;
+    background-color: var(--body-color);
+    transition: all 0.5s all;
+}
+.sidebar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    transition: all 0.5s ease;
+    z-index: 100;
 }
 
-.nav{
+.sidebar.close .text{
+    opacity: 0;
+}
+
+.sidebar.text {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    transition: all 0.4s ease;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.sidebar.close {
+    width: 88px;
+}
+.sidebar .image{
+    min-width: 60px;
     display: flex;
-    width: 100%;
-    border-bottom: 3px white solid;
-    padding: 2% 0% 2% 0%;
-    background-color:rgb(14, 14, 34);
-    font-family: 'VT323', monospace;
-
+    align-items: center;
+    justify-content: center;
 }
 
-#nav a{
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: .3s;
-    margin: 5px;
-    letter-spacing: 2px;
-    background-color:rgb(14, 14, 34);   
-}
-
-#nav a:hover{
-    color: grey;
-}
-#menu1, #menu{
-    display: flex;
+.sidebar li {
+    height: 50px;
+    margin-top: 10px;
     list-style: none;
-    width: 40%;
-    margin: 0 auto;
-    text-transform: uppercase;
-    background-color:rgb(14, 14, 34);
-}
-
-#menu1{
-    padding-right:25%;
-}
-#menu {
-    padding-left:25%;
-}
-.menu-mode{
-    display: none;
-}
-
-main {
-	display:inline-block;
-    width: 100%;
-       
-}
-
-.rota{
     display: flex;
-    width: 100%;
-    height: 5%;
-	right: 0;
-    top: 10%;
-    position:fixed;
-    background-color:white ;
-    padding-left: 6%;
-}
- .rota i{
-    color: black;
-    padding-top: 9px;
-    cursor: pointer;
-    transition: .3s;
-    background-color: white;
-}
-.rota i:hover{
-    color: aqua;
-}
-.rota .caminho{
-    font: 80%;
-    font-weight: 500;
-    color: black;
-    margin-left: 0;
-    margin-top: 7px;
-    background-color: white;
-    font-family: 'VT323', monospace;
-    
-}
- 
- .rota .caminho:hover{
-    color: aqua;
+    align-items: center;
 }
 
-main{
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 17px;  
+}
+.sidebar li .icon,
+.sidebar li .text{
+    color: var(--text-color);
+    transition: all 0.2s ease;
+}
+
+.sidebar header {
+    position: relative;
+}
+.sidebar .image-text img{
+    width: 40px;
+    border-radius: 6px;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+
+header .image-text .header-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text .name{
+    font-weight: 600;
+    color: var(--text-color);
+}
+.header-text .profession{
+    margin-top: -1px;
+    color: var(--text-color);
+}
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background:var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+.sidebar.close header .toggle{
+    transform: translateY(-50%);
+}
+body.dark .sidebar header .toggle{
+    color: var(--text-color);
+}
+
+.sidebar .menu{
+    margin-top: 35px;
+}
+
+.sidebar .search-box{
+    background-color: var(--primary-color-light);
+    border-radius: 6px;
+    transition: all 0.5s ease;
+}
+.search-box input {
+    height: 100%;
     width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--primary-color-light);
+    transition: all 0.5s ease;
+    color: var(--text-color);
+}
+
+.sidebar li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition:all 0.4s all;
+}
+.sidebar li a:hover{
+    background: var(--primary-color);
+}
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color:var(--sidebar-color)
+}
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text{
+    color:var(--text-color)
+}
+
+.sidebar .menu-bar{
     
+    height:calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-bar .mode{
+    position: relative;
+    border-radius: 6px;
+    background:var(--primary-color-light);
+}
+
+.menu-bar .mode .moon-sun{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu-bar .mode i{
+    position: absolute;
+    transition:ease-in-out 04ms all;
+}
+
+.menu-bar .mode i.sun{
+    opacity: 0;
+}
+
+body.dark .menu-bar .mode i.sun{
+    opacity: 1;
+}
+
+body.dark .menu-bar .mode i.moon{
+    opacity: 1;
+}
+
+.menu-bar .mode .toggle-switch{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+    transition: all 0.5s ease;
+    
+}
+
+.toggle-switch .switch{
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background:var(--toggle-color);
+    transition: all 0.5s ease;
+}
+.switch::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: -15%;
+    left: 4px;
+    transform: translateY(50%);
+    background:var(--primary-color-light);
+    cursor: pointer;
+    transition:all 0.3s all;
+}
+
+
+body.dark .switch::before{
+    left: 25px;
+}
+body.dark{
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+}
+
+.home{
+    position:relative;
+    background:var(--body-color);
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    transition:all 05s all;
+}
+
+.sidebar.close ~ .home{
+    left: 88px;
+    width: calc(100% - 88px);
 }
 
  .Projeto-conversor{
@@ -111,7 +281,7 @@ main{
     height: 100%;
     padding: 10% 10% 0% 10%;
     top:0;
-    background-color: black;
+    background-color: var(--body-color);
 }
 
 .Projeto-conversor h1{
@@ -120,23 +290,23 @@ main{
     width: 60%;
     text-align:right;
     padding-right: 10px;
-    color: black;
-    background-color:white;
+    color: var(--text-color);
+    background-color:var(--sidebar-color);
     display: block;
     align-items: center;
     justify-content: center;
     font-family: 'Press Start 2P', cursive;
 }
 
-.text{
+.Projeto-conversor .text{
     display: block;
     width: 100%;
     margin: 5% 0% 0% 0%;
     text-indent: 15px;
-    color: white;
+    color: var(--text-color);
     text-align: justify; 
     font-size: 26px;
-    background-color: black;
+    background-color: var(--body-color);
     font-family: 'VT323', monospace;
 }
 
@@ -148,10 +318,10 @@ main{
     display: block;
     width: 100%;
     margin: 5% 0% 0% 0%;
-    color: white;
+    color: var(--text-color);
     text-align: justify; 
     font-size: 26px;
-    background-color: black;
+    background-color: var(--body-color);
     font-family: 'VT323', monospace;
 }
 
@@ -159,10 +329,10 @@ main{
     font-size: 70px;
     width: 100%;
     text-align:center;
-    color: white;
+    color: var(--text-color);
     padding: 2% 0%;
     font-family: 'Press Start 2P', cursive;
-    background-color: rgb(58, 8, 66);
+    background-color: var(--sidebar-color);
     
 }
 
@@ -179,12 +349,12 @@ main{
 .projeto-cod h3{
     font-size: 70px;
     line-height: 1;
-    width: 95%;
+    width: 90%;
     text-align:right;
-    margin:40px 0px 40px 0px;
+    margin:20px 0px;
     padding: 20px 20px 15px 0px;
-    color: white;
-    background-color: rgb(116, 116, 119);
+    color: var(--text-color);
+    background-color: var(--sidebar-color);
     font-family: 'Press Start 2P', cursive;
     
 }
@@ -192,11 +362,11 @@ main{
     display: block;
     width: 100%;
     line-height: 40px;
-    color: white;
+    color: var(--toggle-color);
     text-align:justify; 
-    font-size: 26px;
+    font-size: 120%;
     padding:0px 50px 0px 40px;
-    background-color:rgb(52, 52, 52);
+    
     font-family: 'VT323', monospace;
 }
 .projeto-int{
