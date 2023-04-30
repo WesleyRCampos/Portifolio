@@ -30,6 +30,7 @@ body{
     left: 0;
     height: 100%;
     width: 250px;
+    border-right:2px solid var(--text-color);
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: all 0.5s ease;
@@ -279,7 +280,7 @@ body.dark{
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 10% 10% 0% 10%;
+    padding: 5% 5% 0% 5%;
     top:0;
     background-color: var(--body-color);
 }
@@ -295,7 +296,6 @@ body.dark{
     display: block;
     align-items: center;
     justify-content: center;
-    font-family: 'Press Start 2P', cursive;
 }
 
 .Projeto-conversor .text{
@@ -305,9 +305,8 @@ body.dark{
     text-indent: 15px;
     color: var(--text-color);
     text-align: justify; 
-    font-size: 26px;
+    font-size: 20px;
     background-color: var(--body-color);
-    font-family: 'VT323', monospace;
 }
 
 .text::first-letter{
@@ -322,16 +321,14 @@ body.dark{
     text-align: justify; 
     font-size: 26px;
     background-color: var(--body-color);
-    font-family: 'VT323', monospace;
 }
 
 .cod-Principal{
-    font-size: 70px;
+    font-size: 25px;
     width: 100%;
     text-align:center;
     color: var(--text-color);
     padding: 2% 0%;
-    font-family: 'Press Start 2P', cursive;
     background-color: var(--sidebar-color);
     
 }
@@ -347,16 +344,14 @@ body.dark{
 }
 
 .projeto-cod h3{
-    font-size: 70px;
+    font-size: 25px;
     line-height: 1;
     width: 90%;
     text-align:right;
     margin:20px 0px;
     padding: 20px 20px 15px 0px;
     color: var(--text-color);
-    background-color: var(--sidebar-color);
-    font-family: 'Press Start 2P', cursive;
-    
+    background-color: var(--sidebar-color);    
 }
 .projeto-cod p{
     display: block;
@@ -366,8 +361,6 @@ body.dark{
     text-align:justify; 
     font-size: 120%;
     padding:0px 50px 0px 40px;
-    
-    font-family: 'VT323', monospace;
 }
 .projeto-int{
     width: 100%;
@@ -381,7 +374,6 @@ body.dark{
     scrollbar-gutter: stable;
     padding: 0% 5% 0% 5%;
     margin: 3% 0% 3% 0%;
-    font-family: 'VT323', monospace; 
     font-size: 18px;  
 }
 .projeto-content p{
@@ -462,16 +454,13 @@ body.dark{
 
 footer {
 	text-align: center;
-	background: rgb(12,0,10);
-    background-image:url(../icons/gifs-de-anime-aesthetic-49.gif);
-    background-position-y:center;
-    background-position-x:right;
+	background: var(--body-color);
 	padding: 10px 0;
 }
 footer img{
 	width: 90px;
 	border-radius: 8%;
-	background-color:rgb(27, 5, 39);
+	background-color:var(--primary-color);
 }
 
 footer p{
@@ -480,9 +469,8 @@ footer p{
 
 .copyright {
 	color: #FFFFFF;
-	font-size: 23px;
+	font-size: 15px;
 	margin: 20px 0 0;
-    font-family: 'VT323', monospace;
 }
 
 
