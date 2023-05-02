@@ -1,23 +1,302 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+.sidebar .image{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+   
+}
+body{
+    height: 100%;
+    background-color: var(--body-color);
+    transition: all 0.5s all;
+}
 .sidebar {
     position: fixed; 
     top: 0;
     left: 0;
     border-right:2px solid var(--text-color);
-    height: 100vh;
+    height: 650px;
     width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    transition: all 0.5s ease;
+    z-index: 100;
 }
-.sidebar .menu-bar {
-    height: calc(100% - 120px);
+
+.sidebar.close .text,
+.sidebar.close li .icon,
+.sidebar.close .search-box,
+.sidebar.close .image,
+.sidebar.close .mode{
+    opacity: 0;
+}
+
+.sidebar.close li .icon-menu{
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.sidebar .menu-box{
+    display:flex;
+    position: absolute;
+    top: -20%;
+    left: 6%;
+}
+.sidebar li .icon-menu{
+    color: #ccc;
+    opacity: 0;
+}
+
+
+.sidebar.text {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    transition: all 0.4s ease;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.sidebar.close {
+    width: 50px;
+    height: 50px;
+    top: 1%;
+    left: 2%;
+    border-radius: 8px;
+    
+}
+.sidebar .image{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 17px;
+    opacity: 1;  
+}
+.sidebar li .icon,
+.sidebar li .text{
+    color: var(--text-color);
+    transition: all 0.2s ease;
+}
+
+.sidebar header {
+    position: relative;
+}
+.sidebar .image-text img{
+    width: 40px;
+    border-radius: 6px;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+
+header .image-text .header-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text .name{
+    font-weight: 600;
+    color: var(--text-color);
+}
+.header-text .profession{
+    margin-top: -1px;
+    color: var(--text-color);
+}
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    border-right:2px solid var(--text-color);
+    background:var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+.sidebar.close header .toggle{
+    transform: translateY(-50%);
+}
+body.dark .sidebar header .toggle{
+    color: var(--text-color);
+}
+
+.sidebar .menu{
+    margin-top: 35px;
+}
+
+.sidebar .search-box{
+    background-color: var(--primary-color-light);
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+.search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--primary-color-light);
+    transition: all 0.5s ease;
+    color: var(--text-color);
+}
+
+.sidebar li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition:all 0.4s all;
+}
+.sidebar li a:hover{
+    background: var(--primary-color);
+}
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color:var(--sidebar-color)
+}
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text{
+    color:var(--text-color)
+}
+
+.sidebar .menu-bar{
+    
+    height:calc(100% - 170px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.home{
-    width: 768px;
-    height: 100vh;
+
+.menu-bar .mode{
+    position: relative;
+    border-radius: 6px;
+    background:var(--primary-color-light);
+}
+
+.menu-bar .mode .moon-sun{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu-bar .mode i{
+    position: absolute;
+    transition:ease-in-out 04ms all;
+}
+
+.menu-bar .mode i.sun{
+    opacity: 0;
+}
+
+body.dark .menu-bar .mode i.sun{
+    opacity: 1;
+}
+
+body.dark .menu-bar .mode i.moon{
+    opacity: 1;
+}
+
+.menu-bar .mode .toggle-switch{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+    transition: all 0.5s ease;
+    
+}
+
+.toggle-switch .switch{
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background:var(--toggle-color);
+    transition: all 0.5s ease;
+}
+.switch::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: -15%;
+    left: 4px;
+    transform: translateY(50%);
+    background:var(--primary-color-light);
+    cursor: pointer;
+    transition:all 0.3s all;
 }
 
 
+body.dark .switch::before{
+    left: 25px;
+}
+body.dark{
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+}
+
+.home{
+    position:static;
+    background:var(--body-color);
+    width: 786px;
+    height: 100%;
+    width: 100%;
+    transition:all 05s all;
+}
+
+.sidebar.close ~ .home{
+    left: 0px;
+    width:100%;
+}
 .Info{
     background-image: url(../icons/Snapinsta.app_21980685_526441997709137_7744302514064850944_n_1080\ \(1\).jpg);
     background-size:cover;
@@ -30,7 +309,7 @@
     display: none;
 }
 .text-container h1{
-    font-size: 210%;
+    font-size: 160%;
 }
 
 .Intro p{
@@ -88,8 +367,9 @@
 }
 
 #Especialidades .container .title-espe{
-    width: 120%;
-    height: 100vh;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 10%;
     justify-content:center;
     
 }

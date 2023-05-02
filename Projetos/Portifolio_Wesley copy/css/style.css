@@ -38,6 +38,10 @@ body{
     z-index: 100;
 }
 
+.sidebar .menu-box{
+    display: none;
+}
+
 .sidebar.close .text{
     opacity: 0;
 }
@@ -844,5 +848,4 @@ footer p{
    
 }
 
-
-    
+ 
