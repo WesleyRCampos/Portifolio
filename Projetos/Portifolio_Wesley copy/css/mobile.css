@@ -22,9 +22,10 @@ body{
     top: 0;
     left: 0;
     border-right:2px solid var(--text-color);
-    height: 650px;
+    height: 630px;
     width: 250px;
     padding: 10px 14px;
+    border-bottom-right-radius: 12px;
     background: var(--sidebar-color);
     transition: all 0.5s ease;
     z-index: 100;
@@ -131,7 +132,7 @@ header .image-text .header-text{
 
 .sidebar header .toggle{
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: -25px;
     transform: translateY(-50%) rotate(180deg);
     height: 25px;
@@ -147,7 +148,10 @@ header .image-text .header-text{
     transition: all 0.3s ease;
 }
 .sidebar.close header .toggle{
-    transform: translateY(-50%);
+    transform: rotate(45deg) translateY(-50%);
+    top: 35%;
+    right: -15px;
+    
 }
 body.dark .sidebar header .toggle{
     color: var(--text-color);
