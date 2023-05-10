@@ -18,7 +18,7 @@
     <nav class="sidebar close">
         <header>
             <li class="menu-box">
-                <i class="fa-solid fa-search icon-menu"></i>
+                <h1 class="icon-menu">Menu</h1>
             </li>
             <div class="image-text">
                 <span class="image">
@@ -29,6 +29,24 @@
                     <span class="name">Portifolio</span>
                     <span class="profession">Analista de Sistemas</span>
                 </div>
+                <div class="text-menu">
+                    <li class="search-box">
+                        <i class="fa-solid fa-search icon"></i>
+                        <input type="text" placeholder="Pesquisar....">
+                    </li>
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class="fa-solid fa-moon fa-fade icon moon"></i>
+                            <i class="fa-solid fa-sun fa-fade icon sun"></i>
+                        </div>
+                        <span class="mode-text text">Dark Mode</span>
+                        <div class="toggle-switch">
+                            <span class="switch">
+
+                            </span>
+                        </div>
+                    </li>
+                </div>
             </div>
 
             <i class="fa-solid fa-chevron-right toggle"></i>
@@ -36,10 +54,6 @@
         </header>
         <div class="menu-bar">
             <div class="menu">
-                <li class="search-box">
-                    <i class="fa-solid fa-search icon"></i>
-                    <input type="text" placeholder="Pesquisar....">
-                </li>
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="#casa">
@@ -53,6 +67,7 @@
                             <span class="text nav-text">Sobre</span>
                         </a>
                     </li>
+
                     <li class="nav-link">
                         <a href="#">
                             <i class="fa-sharp fa-solid fa-briefcase icon"></i>
@@ -78,20 +93,6 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-                <li class="mode">
-                    <div class="moon-sun">
-                        <i class="fa-solid fa-moon fa-fade icon moon"></i>
-                        <i class="fa-solid fa-sun fa-fade icon sun"></i>
-                    </div>
-                    <span class="mode-text text">Dark Mode</span>
-                    <div class="toggle-switch">
-                        <span class="switch">
-
-                        </span>
-                    </div>
-                </li>
-            </div>
         </div>
     </nav>
     <section class="home">
@@ -101,7 +102,7 @@
                 <div class="Apresentacao">
                     <div class="Info">
                         <div class="wesleyImg">
-                            <img src="./icons/Snapinsta.app_21980685_526441997709137_7744302514064850944_n_1080 (1).jpg" alt="imagem perfil">
+                            <img src="./icons/chrome_image_2_de_abr._de_2023_16_06_31_BRT[1].png" alt="imagem perfil">
                         </div>
                         <div class="Intro">
                             <h1 class=" Nome">Ei, Eu Sou</h1> 
@@ -121,12 +122,11 @@
                     <p>Sou estudante de analise e desenvolvimento de sistemas e me especializo
                         em java e Springboot e atualmene tambem em cloud AWS, tenho 24 anos e 
                         espero que goste do perfil junior.
-                        
                     </p>
                     <a href="#">Contatar</a>
                 </div>
                 <div class="about-img">
-                    <img src="./icons/1682793299667[1].png" alt="imagem do wesley">
+                    <img src="./icons/Foto1[1].png" alt="imagem do wesley">
                 </div>
             </section>  
             <section id="Especialidades">
@@ -344,7 +344,6 @@
                 </div>
             </section>
             <section class="contato" id="contato">
-                <h2>Contato</h2>
                 <form>
                     <label for="nomesobrenome">Nome e sobrenome</label>
                     <input type="text" id="nomesobrenome" class="input-padrao" required>
@@ -360,7 +359,7 @@
                     <textarea cols="70" rows="10" id="mansagem" class="input-padrao" required></textarea>
 
                     <fieldset>
-                        <p>Como preferi o nosso contato?</p>
+                        <p>Como preferi o contato?</p>
                         <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
                         
                         <label for="radio-telefone"><input type="radio" name="contato" value="email" id="radio-telefone">Telefone</label>
@@ -372,13 +371,41 @@
 
                     <input type="submit" value="Enviar Mensagem" class="enviar">
                 </form>
+                <div class="contato-links">
+                    <ul class="links">
+                        <li class="link">
+                            <a href="#casa">
+                                <i class="fa-brands fa-square-github icon-contato"></i>
+                                <span class="text ">Github</span>
+                            </a>
+                        </li>
+                        <li class="link">
+                            <a href="#sobre">
+                                <i class="fa-brands fa-linkedin icon-contato"></i>
+                                <span class="text ">Linkedin</span>
+                            </a>
+                        </li>
+                        <li class="link">
+                            <a href="#projetos">
+                                <i class="fa-solid fa-envelope icon-contato"></i>
+                                <span class="text ">Email</span>
+                            </a>
+                        </li>
+                        <li class="link" >
+                            <a href="#contato">
+                                <i class="fa-solid fa-mobile  icon"></i>
+                                <span class="text">Telefone</span>
+                            </a>
+                        </li>
+                    </ul>
 
             
             </section>
             <script src="./js/animation.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
             <script>
-                var swiper = new Swiper(".mySwiper", {
+                var swiper = new Swiper(".mySwiper", 
+                {
                 slidesPerView: 2,
                 spaceBetween:30,
                 centeredSlides: false,
