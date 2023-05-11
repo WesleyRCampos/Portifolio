@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="css/reset.css" rel="stylesheet"  type="text/css">
     <link href="css/style.css" rel="stylesheet"  type="text/css">
     <link href="css/mobile.css" media="screen and (max-width: 768px)" rel="stylesheet"  type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -95,8 +96,7 @@
                 </ul>
         </div>
     </nav>
-    <section class="home">
-        <main>
+        <main class="page-conteudo">
             
             <div class="Conteudo" id="casa">
                 <div class="Apresentacao">
@@ -126,36 +126,94 @@
                     <a href="#">Contatar</a>
                 </div>
                 <div class="about-img">
-                    <img src="./icons/Foto1[1].png" alt="imagem do wesley">
+                    <img class="image-about" src="./icons/Foto1[1].png" alt="imagem do wesley">
                 </div>
-            </section>  
-            <section id="Especialidades">
-                <div class="container">
-                    <div class="title-espe">
-                        <h1>Sou Desenvolvedor</h1>
-                        <p>osdmfosmfos s osfmfmos sfmofkosfofs</p>
-                        <div class="box-title">
-                            <p>90%</p>
-                            <div class="b1"><div class="b2"></div></div>
-                            <span>HTML</span>
-                            <p>75%</p>
-                            <div class="b1"><div class="b3"></div></div>
-                            <span>Css</span>
-                            <p>25%</p>
-                            <div class="b1"><div class="b4"></div></div>
-                            <span>Cloud AWS</span>
-                            <p>50%</p>
-                            <div class="b1"><div class="b5"></div></div>
-                            <span>Java</span>
-                            <p>25%</p>
-                            <div class="b1"><div class="b6"></div></div>
-                            <span>Springboot</span>
-                        </div>
-                    </div>
+            </section>
+            <section class="categoria">
+                <div class="categ-intro">
+                    <p class="categ-title">
+                        <span><</span>
+                        Todos os meus conhecimentos e aplicoes que podem ser aplicadas a projetos
+                        <span>></span>
+                    </p>
+                    <p>Um profissional totalmente integrado com as inovadoções e
+                     preparado para as melhores oportunidades do mercado.</p>
+                </div>
+                <ul class="categ-item">
+                    <li>
+                        <i class="fa-solid fa-code  icon"></i>
+                        <h2>Desenvolvedor</h2>
+                        <p>Responsável pelo desenvolvimento em Java de projetam, implantam, modificam 
+                            e cuidam da manutenção de programas e aplicativos de 
+                            software baseados em Java. Função ativa 
+                            em todos os estágios de desenvolvimento do aplicativo,
+                            desde a fase inicial até a execução e atualizações.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-database  icon"></i>
+                        <h2>Banco de Dados</h2>
+                        <p>responsável por projetar, implementar, gerenciar e manter
+                            sistemas de banco de dados para armazenar e acessar 
+                            informações organizadas. trabalho para garantir
+                            a integridade, segurança e disponibilidade dos dados, 
+                            além de otimizar o desempenho e a escalabilidade dos sistemas.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-cloud  icon"></i>
+                        <h2>Cloud</h2>
+                        <p>Responsável pelo processo de migração
+                            para a Nuvem. Em essência move todos
+                            os dados, aplicações, documentos e 
+                            recursos da organização para um único
+                            ambiente compartilhado na rede.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="especialidades">
+                <div class="especi-titulo">
+                    <h1>Formações e atribuições de<span> Hard Skill</span></h1>
+                    <p>Sou estudante de Analise e Desenvolvimento de Sistemas, 
+                        tenho experiências em Java / Spring boot/ atualmente 
+                        estou em cursos extracurriculares de Cloud AWS e Java 
+                        com a Oracle/ Alura e outros cursos... 
+                        para ajuda-lo.</p>
+                </div>
+                <div>
+                    <ul class="especi-container">
+                        <li class="especi-1">
+                            <div class="progress" style="--i:85; --clr: rgb(235, 92, 9);">
+                                <h3>85<span>%</span></h3>
+                                <h4>Html</h4>
+                            </div>
+                        </li>
+                        <li class="especi-2">
+                            <div class="progress" style="--i:85; --clr: rgb(19, 19, 235);">
+                                <h3>85<span>%</span></h3>
+                                <h4>Css</h4>
+                            </div>
+                        </li>
+                        <li class="especi-3">
+                            <div class="progress less" style="--i:15; --clr: rgb(68, 68, 101);">
+                                <h3>15<span>%</span></h3>
+                                <h4>MySQL</h4>
+                            </div>
+                        </li>
+                        <li class="especi-4">
+                            <div class="progress less" style="--i:25; --clr: rgb(0, 153, 255);">
+                                <h3>25<span>%</span></h3>
+                                <h4>Java</h4>
+                            </div>
+                        </li>
+                        <li class="especi-5">
+                            <div class="progress less" style="--i:20; --clr: rgb(95, 95, 188);">
+                                <h3>20<span>%</span></h3>
+                                <h4>AWS</h4>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="project-port" >
-                <h2>Projetos</h2>
                 <p id="projetos">Alguns projetos e ideias apresentados em cursos e na minha graduaçao superior,
                     cada peça e trabalho realizado é um pouco da formação de um profissional de 
                     tecnologia e sempre esta em avanço a como area. 
@@ -402,6 +460,7 @@
             
             </section>
             <script src="./js/animation.js"></script>
+            <script src="https://unpkg.com/scrollreveal"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
             <script>
                 var swiper = new Swiper(".mySwiper", 
@@ -432,6 +491,17 @@
                     clickable: true,
                 },
                 });
+
+                ScrollReveal({
+                reset: true,
+                distance: '200px',
+                duration: 2000,
+                delay: 200
+                });
+
+                ScrollReveal().reveal('.about-img, .image-about, .categ-item', { origin: 'left' });
+                ScrollReveal().reveal('.wesleyImg, .especi-container', { origin: 'top' });
+                ScrollReveal().reveal('.Intro', { origin: 'bottom' });
             </script>
 
         </main>
@@ -439,6 +509,5 @@
             <img src="./icons/A letter tech logo (1).png" alt="Foto do Wesley">
             <p class="copyright">&copy; Copyright Wesley Rodrigues - 2023</p>
         </footer>
-    </section>
 </body>
 </html>
