@@ -11,7 +11,11 @@ Subir arquivo de script criado para a sua conta no GitHub.</h3>
 </br>
 </br>
 </br>
+<<<<<<< HEAD
 #!/bin/bash </br>
+=======
+#!/bin/bas </br>
+>>>>>>> 977d416e92efed521f5a3aa992ba489d424fc73b
 echo "Criando infro dio..."
 </br>
 </br>
