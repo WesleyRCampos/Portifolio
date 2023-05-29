@@ -10,6 +10,7 @@ echo "Atualizando servidor dio..."
 </br>
 </br>
 
+
 apt-get upadate
 
 apt-get upgrade -y
