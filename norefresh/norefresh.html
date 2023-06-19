@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregar conteúdo sem Refresh</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Carregando Conteúdo sem Refresh</h1>
+    </header>
+
+    <nav>
+        <a onclick="openPage('A','conteudo')">Conteudo A</a> |
+        <a onclick="openPage('B','conteudo')">Conteudo B</a> |
+        <a onclick="openPage('C','conteudo')">Conteudo C</a>
+    </nav>
+
+    <section id="conteudo">
+        <header>
+            <h2>Conteúdos</h2>
+        </header>
+        <p>Utilize o menu acima para trocar os conteúdos</p>
+    </section>
+
+    <script src="./js/norefresh.js"></script>
+
+</body>
+
+</html>
