@@ -24,6 +24,7 @@ const fs = require('fs');
         const imgList = imgArray.map( ({src}) => ({
             src
         }) )
+        
 
 
     //Colocar fora da função
