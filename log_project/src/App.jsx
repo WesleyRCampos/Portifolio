@@ -12,29 +12,16 @@ import './App.css';
 
 
 function App() {
-  const [rotas, setRotas] = useState([
+  const [rotas, setRotas, ] = useState([
     {
     id: 1,
-    nome: "joao",
-    data:"01/05/23",
-    ponto_inicial: "são paulo",
-    ponto_final: "sorocaba",
+    nome: "padrao",
+    data:"xx/xx/xxxx",
+    ponto_inicial: "xxxx",
+    ponto_final: "xxxx",
     },
-    {
-    id: 2,
-    nome: "joao",
-    data:"01/05/23",
-    ponto_inicial: "são paulo",
-    ponto_final: "sorocaba",
-    },
-    {
-    id: 3,
-    nome: "joao",
-    data:"01/05/23",
-    ponto_inicial: "são paulo",
-    ponto_final: "sorocaba",
-    },
-
+    
+    
   ]);
 
   const addRota = (nome, data, ponto_inicial, ponto_final) => {
@@ -56,12 +43,12 @@ function App() {
     const filteredRota = newRotas.filter(rota => rota.id !== id ? rota : null);
     setRotas(filteredRota);
   };
-
+  
   
 
   return (
   <div className="app">
-    <h1>rotas</h1>
+    <h1>Rotas</h1>
     <div className="container">
     <div className="pag1 ">
     <div className="rotas-lista">
@@ -69,12 +56,12 @@ function App() {
        <Rota key={rota.id} rota={rota} removeRota={removeRota}/>
       ))}
     </div>
-    <div className="RotaForm">
+    <div>
     <RotaForm addRota={addRota}/>
     </div>
     </div>
     <div className="Map-lista">
-    <MapPage />
+    <MapPage  />
     </div>
     </div>
     </div>

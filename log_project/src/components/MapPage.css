@@ -1,5 +1,8 @@
 .mapLog{
+  width:80vw;
   height: 100vh;
+  border-radius: 8px;
+  
 }
 
 .map-marker {

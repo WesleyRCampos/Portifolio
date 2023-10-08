@@ -19,7 +19,7 @@ const RotaForm = ({ addRota }) => {
 
   return (
     <div className="RotaForm">
-      <h2>Nova Entrega:</h2>
+      <h2 className='titleForm'>Nova Entrega:</h2>
       <form onSubmit={handleSubmit} className='Form'>
         <input type="text" placeholder="digite seu Nome..." value={value} onChange={(e) => setValue(e.target.value)} />
         <input type="date" placeholder="digite a data..." value={data} onChange={(e) => setData(e.target.value)} />

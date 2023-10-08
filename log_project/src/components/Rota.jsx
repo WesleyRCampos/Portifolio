@@ -1,6 +1,6 @@
 import React from "react";
 
-const Rota = ({ rota, removeRota }) => {
+const Rota = ({ rota, removeRota, handleClick }) => {
   return (
     <div className="rota">
           <div className="content">
@@ -12,7 +12,7 @@ const Rota = ({ rota, removeRota }) => {
             </div>
           </div>
           <div>
-            <button className="map" >mapa</button>
+            <button className="map">mapa</button>
             <button className="delete" onClick={() => removeRota(rota.id)}>x</button>
           </div>
         </div>
