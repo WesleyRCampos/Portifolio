@@ -26,9 +26,9 @@ const RotaForm = ({ addRota }) => {
         <label for="data">Data :</label>
         <input type="date" id='data' required placeholder="digite a data..." value={data} onChange={(e) => setData(e.target.value)} />
         <label for="Partida">Partida :</label>
-        <input type="text" id='Partida' required placeholder="digite a cidade de partida..." value={ponto_inicial} onChange={(e) => setInicio(e.target.value)} />
+        <input type="text" id='Partida' required placeholder="insira o local de partida..." value={ponto_inicial} onChange={(e) => setInicio(e.target.value)} />
         <label for="Destino">Destino :</label>
-        <input type="text" id='Destino' required placeholder="digite a cidade de destino..." value={ponto_final} onChange={(e) => setFinal(e.target.value)} />
+        <input type="text" id='Destino' required placeholder="insira o local de destino..." value={ponto_final} onChange={(e) => setFinal(e.target.value)} />
         <button type="submit">Adicionar</button>
       </form>
     </div>
