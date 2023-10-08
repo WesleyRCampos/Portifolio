@@ -22,9 +22,9 @@ const RotaForm = ({ addRota }) => {
       <h2 className='titleForm'>Nova Entrega:</h2>
       <form onSubmit={handleSubmit} className='Form'>
         <label for="nomesobrenome">Nome :</label>
-        <input type="text" id="nomesobrenome" required placeholder="digite seu Nome..." value={value} onChange={(e) => setValue(e.target.value)} />
+        <input type="text" id="nomesobrenome" required placeholder="insira seu Nome..." value={value} onChange={(e) => setValue(e.target.value)} />
         <label for="data">Data :</label>
-        <input type="date" id='data' required placeholder="digite a data..." value={data} onChange={(e) => setData(e.target.value)} />
+        <input type="date" id='data' required placeholder="insira a data..." value={data} onChange={(e) => setData(e.target.value)} />
         <label for="Partida">Partida :</label>
         <input type="text" id='Partida' required placeholder="insira o local de partida..." value={ponto_inicial} onChange={(e) => setInicio(e.target.value)} />
         <label for="Destino">Destino :</label>

@@ -33,8 +33,9 @@ const MapPage = () => {
     React.useState<google.maps.DistanceMatrixResponse | null>(null);
 
   const position = {
-    lat: -27.590824,
-    lng: -48.551262,
+    lat: -23.536095387209,
+    lng: -46.64755452705741,
+    
   };
 
   const onMapLoad = (map: google.maps.Map) => {
