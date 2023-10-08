@@ -44,11 +44,14 @@ function App() {
     setRotas(filteredRota);
   };
   
+  const [ map, setMap] =useState([]);
+
+  
   
 
   return (
   <div className="app">
-    <h1>Rotas</h1>
+    <h1>rotas</h1>
     <div className="container">
     <div className="pag1 ">
     <div className="rotas-lista">
@@ -56,12 +59,12 @@ function App() {
        <Rota key={rota.id} rota={rota} removeRota={removeRota}/>
       ))}
     </div>
-    <div>
+    <div >
     <RotaForm addRota={addRota}/>
     </div>
     </div>
     <div className="Map-lista">
-    <MapPage  />
+    <MapPage />
     </div>
     </div>
     </div>

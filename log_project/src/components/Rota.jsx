@@ -1,6 +1,6 @@
 import React from "react";
 
-const Rota = ({ rota, removeRota, handleClick }) => {
+const Rota = ({ rota, removeRota }) => {
   return (
     <div className="rota">
           <div className="content">
