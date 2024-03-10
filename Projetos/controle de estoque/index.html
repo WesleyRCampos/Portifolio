@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Estoque</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gerenciador de Estoque</h1>
+  </header>
+  <main>
+    <section>
+      <form id="product-form">
+            <label for="product-name">Nome do Produto:</label>
+            <input type="text" id="product-name" required>
+      
+            <label for="entry-date">Data de Entrada:</label>
+            <input type="date" id="entry-date" required>
+      
+            <label for="exit-date">Data de Validade:</label>
+            <input type="date" id="exit-date" required>
+      
+            <label for="shelf-number">Número do Corredor:</label>
+            <input type="number" id="shelf-number" required>
+       
+            <label for="shelf-height">Altura de Armazenamento:</label>
+            <input type="number" id="shelf-height" required>
+      
+            <button type="submit">Adicionar Produto</button>
+       </form>
+    </section>
+    <section>
+    <div class="filter-container">
+        <select id="filter-type">
+          <option value="product-name">Nome</option>
+          <option  value="exit-date">Validade</option>
+          <option value="shelf-number">Corredor</option>
+        </select>
+        </div>
+        <section class="search-container">
+        <div class="pesquisa">
+        <input type="text" id="filter-value" placeholder="Valor do filtro">
+        </div>
+        <div class="buttons">
+        <button id="filter-button">
+            <img class="procurar" src="./icons/procurar.png" alt="icone de procurar">
+        </button>
+        <button id="reset-button">
+            <img class="excluir" src="./icons/excluir.png" alt="icone de excluir">
+        </button>
+       </div>
+      </section>
+      </div>
+       <div id="product-display-container">
+          <h2>Produtos por Corredor</h2>
+       </div>
+       <button id="print-button">
+        <img class="print" src="./icons/imprimir-sinal-de-ferramenta-de-interface-preenchida.png" alt="icone de imprir">
+       </button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
