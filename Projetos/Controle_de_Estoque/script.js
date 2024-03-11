@@ -10,13 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
       event.preventDefault();
       
       const productName = document.getElementById("product-name").value;
+      const barCode = document.getElementById("bar-code").value;
       const entryDate = document.getElementById("entry-date").value;
       const exitDate = document.getElementById("exit-date").value;
       const shelfNumber = document.getElementById("shelf-number").value;
       const shelfHeight = document.getElementById("shelf-height").value;
   
-      if (productName && entryDate && exitDate && shelfNumber && shelfHeight ) {
-        addProduct(productName, entryDate, exitDate, shelfNumber, shelfHeight);
+      if (productName && barCode && entryDate && exitDate && shelfNumber && shelfHeight ) {
+        addProduct(productName, barCode, entryDate, exitDate, shelfNumber, shelfHeight);
         form.reset();
       } else {
         alert("Por favor, preencha todos os campos.");
@@ -27,15 +28,17 @@ document.addEventListener("DOMContentLoaded", function() {
         printProducts();
       });
   
-    function addProduct(productName, entryDate, exitDate, shelfNumber, shelfHeight) {
+    function addProduct(productName, barCode, entryDate, exitDate, shelfNumber, shelfHeight) {
       const productGroup = document.createElement("div");
       productGroup.classList.add("product-group");
       productGroup.innerHTML = `
         <h3>Produto: ${productName}</h3>
+        <p>Codigo de Barras: ${barCode}</p>
         <p>Data de Entrada: ${entryDate}</p>
         <p>Data de Validade: ${exitDate}</p>
         <p>Numero do Corredor: ${shelfNumber}</p>
         <p>Altura de Armazenamento: ${shelfHeight}</p>
+        <br>
         <button class="delete-button">Excluir</button>
       `;
       displayContainer.appendChild(productGroup);
@@ -92,11 +95,14 @@ document.addEventListener("DOMContentLoaded", function() {
         case "product-name":
           valueToMatch = product.querySelector("h3").textContent.toLowerCase();
           break;
+        case "bar-code":
+          valueToMatch = product.querySelector("p:nth-of-type(1)").textContent.toLowerCase();
+          break;
         case "exit-date":
-          valueToMatch = product.querySelector("p:nth-of-type(2)").textContent.toLowerCase();
+          valueToMatch = product.querySelector("p:nth-of-type(3)").textContent.toLowerCase();
           break;
         case "shelf-number":
-          valueToMatch = product.querySelector("p:nth-of-type(3)").textContent.toLowerCase();
+          valueToMatch = product.querySelector("p:nth-of-type(4)").textContent.toLowerCase();
           break;
         default:
           break;

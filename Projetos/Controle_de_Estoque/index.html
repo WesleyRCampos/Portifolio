@@ -14,7 +14,10 @@
     <section>
       <form id="product-form">
             <label for="product-name">Nome do Produto:</label>
-            <input type="text" id="product-name" required>
+            <input placeholder="ex.: Açucar 5kg" type="text" id="product-name" required>
+
+            <label for="bar-code">Codigo de barras:</label>
+            <input placeholder="ex.: 7898357417892" type="text" id="bar-code" required>
       
             <label for="entry-date">Data de Entrada:</label>
             <input type="date" id="entry-date" required>
@@ -35,7 +38,8 @@
     <div class="filter-container">
         <select id="filter-type">
           <option value="product-name">Nome</option>
-          <option  value="exit-date">Validade</option>
+          <option value="bar-code">Codigo</option>
+          <option value="exit-date">Validade</option>
           <option value="shelf-number">Corredor</option>
         </select>
         </div>
