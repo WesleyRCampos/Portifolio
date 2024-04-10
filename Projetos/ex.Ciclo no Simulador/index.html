@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" defer src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Financiamento</title>
+</head>
+<body>
+    <header>
+        <h1>Calculo do Financiamento</h1>
+    </header>
+    <main>
+        <section>
+          <form id="financiamento-form">
+                <label for="financiamento-preco">Valor do Financiamento:</label>
+                <input placeholder="ex.: 100" type="number" id="financiamento-preco" required>
+
+                <label for="financiamento-parcela">Valor da Parcela:</label>
+                <input placeholder="ex.: 50" type="number" id="financiamento-parcela" required>
+
+                <button type="submit">Adicionar Valores</button>
+           </form>
+        </section>
+        <div id="financiamento-display-container">
+            <h2>Simulação</h2>
+         </div>
+    </main>
+</body>
+</html>
