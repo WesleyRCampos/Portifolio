@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Loja de Carro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="escuro">
+    <header>
+        <nav class="sidebar fechar">
+            <header>
+                <div class="image-text">
+                    <div class="text header-text" >
+                    </div>
+                    <div class="text-menu">
+                        <li class="search-box">
+                            <i class="fa-solid fa-search icon"></i>
+                            <input type="text" id="pesquisar-carro" onkeyup="pesquisarCarro()" placeholder="Pesquisar...">
+                        </li>
+                        
+                        <li class="mode">
+                            <div class="moon-sun">
+                                <i class="fa-solid fa-moon fa-fade icon moon"></i>
+                                <i class="fa-solid fa-sun fa-fade icon sun"></i>
+                            </div>
+                            <span class="mode-text text">Modo Escuro</span>
+                            <div class="toggle-switch">
+                                <span class="switch">
+                                </span>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right toggle"></i>
+                <div class="menu" id="cart">
+                    <h2>Carrinho de Compras</h2>
+                    <ul id="carrinho-Itens">
+                  
+                    </ul>
+               </div>
+        </nav>
+    </header>
+    <main>
+              
+        <div id="banner">
+            <section class="modeloColor">
+                <select id="carro-cor" onchange="trocarCor()">
+                    <option value="white">Branco</option>
+                    <option value="blue">Azul</option>
+                    <option value="black">Preto</option>
+                </select>
+            </section>
+            <section class="modeloinfo">
+                <h2>Bem-Vindo à Nossa Loja de Carros!</h2>
+                <section class="loading-spinner" id="loading-spinner"></section>
+                <div id="carro-detalhes">
+                    <img id="carro-imagem" src="imagem_padrao.png" alt="Car">
+                    <p>Preço: <span id="carro-preco"></span></p>
+                    <p>Modelo: <span id="carro-nome">Seu Novo Carro</span></p>
+                </div>
+            </section>
+            <section class="modeloCar">
+                
+            </section>
+            <button onclick="carrinho()">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Car Store</p>
+    </footer>
+</body>
+</html>
