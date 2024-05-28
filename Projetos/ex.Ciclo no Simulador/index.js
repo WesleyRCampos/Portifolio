@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let parcelasEIndices = ""; // Variável para armazenar os valores das parcelas e índices
 
         for (let i = 1; i <= valorParcelas; i++) {
-            let parcela = emprestimo / i;
+            let parcela =  Math.round(emprestimo / i);
             parcelasEIndices += `Parcela ${i}: ${parcela} R$ <br>- Pagamento `;
             
             let j = 0;
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             parcelasEIndices = parcelasEIndices.slice(0, -2); // Remover a última vírgula e espaço
             parcelasEIndices += `<br>`;
+            
         }
 
         if (emprestimo && valorParcelas) {
